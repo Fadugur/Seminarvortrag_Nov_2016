@@ -1,0 +1,777 @@
+% $Header: /home/vedranm/bitbucket/beamer/solutions/generic-talks/generic-ornate-15min-45min.de.tex,v 90e850259b8b 2007/01/28 20:48:30 tantau $
+
+\documentclass{beamer}
+
+% Diese Datei enthält eine Lösungsvorlage für:
+
+
+% - Vorträge über ein beliebiges Thema.
+% - Vortragslänge zwischen 15 und 45 Minuten. 
+% - Aussehen des Vortrags ist verschnörkelt/dekorativ.
+
+
+
+% Copyright 2004 by Till Tantau .
+%
+% In principle, this file can be redistributed and/or modified under
+% the terms of the GNU Public License, version 2.
+%
+% However, this file is supposed to be a template to be modified
+% for your own needs. For this reason, if you use this file as a
+% template and not specifically distribute it as part of a another
+% package/program, I grant the extra permission to freely copy and
+% modify this file as you see fit and even to delete this copyright
+% notice. 
+
+
+
+\mode<presentation>
+{
+  \usetheme{Frankfurt}
+%   \usetheme{Rochester}
+  % oder ...
+  %\usecolortheme{crane}
+  
+  \setbeamercovered{transparent}
+  % oder auch nicht
+}
+\setbeamercolor{alerted text}{fg=green!40!black}
+
+\usepackage[german]{babel}
+% oder was auch immer
+
+\usepackage[latin1]{inputenc}
+% oder was auch immer
+\usepackage{amsmath}
+\usepackage{times}
+\usepackage[T1]{fontenc}
+% Oder was auch immer. Zu beachten ist, das Font und Encoding passen
+% müssen. Falls T1 nicht funktioniert, kann man versuchen, die Zeile
+% mit fontenc zu löschen.
+\usepackage{booktabs}
+\usepackage{multirow}
+\newcommand{\T}{\ensuremath{^\mathsf{T}}}
+
+\title[CO/Ru dynamics with MDEF and GLO] % (optional, nur bei langen Titeln nötig)
+{Laser-driven dynamics of CO on Ru(0001)}
+
+\subtitle
+{a computational study using electronic friction (MDEF) and the generalized Langevin oscillator (GLO)} % (optional)
+
+\author[] % (optional, nur bei vielen Autoren)
+{Robert Scholz}
+% - Der \inst{?} Befehl sollte nur verwendet werden, wenn die Autoren
+%   unterschiedlichen Instituten angehören.
+
+\institute % (optional, aber oft nötig)
+{ Institut für Chemie \\ Universität Potsdam}
+
+%   \inst{1}%
+%   Institut für Informatik\\
+%   Universität Hier
+%   \and
+%   \inst{2}%
+%   Institut für theoretische Philosophie\\
+%   Universität Dort}
+% - Der \inst{?} Befehl sollte nur verwendet werden, wenn die Autoren
+%   unterschiedlichen Instituten angehören.
+% - Keep it simple, niemand interessiert sich für die genau Adresse.
+
+\date[] % (optional)
+{30. November 2016}
+
+
+%\subject{Informatik}
+% Dies wird lediglich in den PDF Informationskatalog einfügt. Kann gut
+% weggelassen werden.
+
+
+% Falls eine Logodatei namens "university-logo-filename.xxx" vorhanden
+% ist, wobei xxx ein von latex bzw. pdflatex lesbares Graphikformat
+% ist, so kann man wie folgt ein Logo einfügen:
+
+
+
+
+
+% Folgendes sollte gelöscht werden, wenn man nicht am Anfang jedes
+% Unterabschnitts die Gliederung nochmal sehen möchte.
+% \AtBeginSubsection[]
+% {
+%   \begin{frame}[plain]{Gliederung}
+%     \tableofcontents[currentsection,currentsubsection]
+%   \end{frame}
+% }
+
+
+% Falls Aufzählungen immer schrittweise gezeigt werden sollen, kann
+% folgendes Kommando benutzt werden:
+
+%\beamerdefaultoverlayspecification{<+->}
+
+
+
+\begin{document}
+
+
+
+\begin{frame}[plain]
+  \titlepage
+
+\end{frame}
+
+\begin{frame}[plain]{Gliederung}
+  \tableofcontents
+  % Die Option [pausesections] könnte nützlich sein.
+\end{frame}
+
+
+
+% Da dies ein Vorlage für beliebige Vorträge ist, lassen sich kaum
+% allgemeine Regeln zur Strukturierung angeben. Da die Vorlage für
+% einen Vortrag zwischen 15 und 45 Minuten gedacht ist, fährt man aber
+% mit folgenden Regeln oft gut.  
+
+% - Es sollte genau zwei oder drei Abschnitte geben (neben der
+%   Zusammenfassung). 
+% - *Höchstens* drei Unterabschnitte pro Abschnitt.
+% - Pro Rahmen sollte man zwischen 30s und 2min reden. Es sollte also
+%   15 bis 30 Rahmen geben.
+
+\section{Introduction}
+  \subsection{Motivation}
+  
+\begin{frame}{General motivation}
+  \begin{columns}[t]
+  \column{.6\textwidth}
+    \begin{block}{Why investigate laser-driven dynamics on surfaces?}
+      \begin{itemize}
+      \item possible new reaction pathways in heterogenous catalysis
+      \item laser induced desorption, diffusion and reactions
+      \item for fundamental understanding of adsorbate bonding and catalysis 
+      \end{itemize}
+    \end{block}
+  \column{.4\textwidth}
+%     \begin{block}{}  
+      \begin{figure}
+% 	\includegraphics[width=\textwidth]{}
+% 	\newline\begin{scriptsize}Abb. entnommen aus \alert{Fokin et al. 2008}	\end{scriptsize}
+      \end{figure}
+%     \end{block}
+  \end{columns}  
+\end{frame}
+
+% \begin{frame}{CO/Ru-System}
+
+
+\begin{frame}{Specific motivation for the CO/Ru-System}
+  \begin{block}{Recent Experiments partly contradict theory}
+    \begin{itemize}
+     \item Ultrafast time-resolved X-Ray-sepctroscopy hints to physisorbed precursor state
+     \item Recent full 6D PES does not feature physisorption well
+    \end{itemize}
+  \end{block}
+  
+  \begin{block}{Open questions for theory}
+    \begin{itemize}
+     \item Do dynamics reproduce other observables correctly? (e. g. desorption yield) 
+     \item Can the X-Ray-spectra also be explained without physisorption?
+    \end{itemize}
+  \end{block}
+\end{frame}
+
+\begin{frame}{Details of the experiment}
+  
+\end{frame}
+
+\begin{frame}{Two-Temperature Model}
+  
+\end{frame}
+
+\begin{frame}{Laser-Driven Diffusion}
+  
+\end{frame}
+
+
+
+% % \section{Einleitung}
+% %   \subsection{Diamantoide - Die etwas anderen Nanodiamanten}
+% \begin{frame}[plain]{Die Stoffklasse der Diamantoide}
+%   \begin{block}{Was sind Diamantoide?}
+%     \begin{itemize}
+%      \item k\"afigartige, aliphatische Kohlenwasserstoffe
+%      \item Kohlenstoffger\"ust wie im Diamantgitter 
+%     \end{itemize}
+%   \end{block}
+%   \begin{columns}[t]
+%    \column{.73\textwidth}
+%     \begin{block}{Niedere Diamantoide}  
+%       \begin{figure}
+% 	\includegraphics[width=\textwidth]{../abb/low_diam_hres.png}
+% 	\newline\begin{scriptsize}Abb. entnommen aus \alert{Fokin et al. 2008}	\end{scriptsize}
+%       \end{figure}
+%     \end{block}
+% 
+%    \column{.32 \textwidth}
+%     \begin{block}{H\"ohere Diamantoide}
+%       \begin{itemize}
+%        \item Tetramantane \newline(4 Isomere)
+%        \item Pentamantane \newline(10 Isomere)
+%        \item und viele weitere
+%       \end{itemize}  
+%     \end{block}
+%   \end{columns}
+% \end{frame}
+
+
+% \begin{frame}[plain]{Abgrenzung zu Nanodiamantmaterialien und Anwendungspotentiale}
+%   \begin{columns}[t]
+%   \column{.5\textwidth}
+%   \begin{block}{Nanodiamanten}
+%        \begin{itemize}
+%      \item inhomogene Mischung vieler Verbindungen
+%      \item Verklumpung $\Rightarrow$ relativ gro\ss{}e Partikel ($\approx100\,$nm)
+%      \item hergestellt z. B. mittels
+% 	  \begin{itemize}
+% 	    \item Gasphasenabscheidung
+% 	    \item Detonationssynthese
+% 	  \end{itemize}
+% 	\end{itemize}  
+% 	\end{block}
+%   \column{.5\textwidth}    
+%   \begin{block}{Diamantoide}
+% 	\begin{itemize}
+%       \item isolierbare, chemisch reine Verbindungen
+%       \item genau bekannte Struktur
+%       \item Vorkommen: Erd\"ol, -gas, Sedimente      
+%       \item kleinere Diamantoide auch synthetisierbar
+% 	\end{itemize}
+% 	\end{block}
+%   \end{columns}
+% 
+% \begin{block}{Anwendungsm\"oglichkeiten f\"ur Diamantoide}
+% 	\begin{itemize}
+% 		\item Medizin
+% 		\item Materialforschung, insbesondere Polymere
+% 		\item Molekulare Elektronik
+% 	\end{itemize}
+% 
+% \end{block}
+% 
+% \end{frame}
+% 
+% %   \subsection{Anwendungsbereiche von Diamantoidderivaten}
+% 
+% \begin{frame}[plain]{Eigenschaften und Anwendungsm\"oglichkeiten speziell f\"ur Adamantanthionderivate}
+% \begin{columns}[t]
+% \column{.7\textwidth}  
+% \begin{block}{Adamantanthion}
+% 	\begin{itemize}
+% 		\item photochemisches Modellsystem f\"ur alicyclische Thioketone
+% 	\end{itemize}
+% 
+% \end{block}
+% \column{.3\textwidth} 
+% \begin{figure}
+% 		\includegraphics[width=\textwidth]{../abb/Thion.pdf}
+% \end{figure}
+% \end{columns}
+% 
+% \begin{columns}[c]
+% 	\column{.5\textwidth}
+%   \begin{block}{H\"oher substituierte Adamantanthionderivate}
+%      \begin{itemize}
+%       \item optische Bandl\"ucke im sichtbaren Bereich\footnote{\alert{V\"oros et al. 2012}}$^,$\footnote{\alert{St\"ucker 2013}}
+%       \item m\"ogliche Verwendung als Biomarker$^a$
+%      \end{itemize}
+%   \end{block}
+% \column{.5\textwidth}
+% \begin{columns}[c]
+% \column{.7\textwidth}
+% \begin{figure}
+% 		\includegraphics[width=1.15\textwidth]{../abb/optical_gap.png}
+% \end{figure}
+% \column{.3\textwidth}
+% \begin{figure}
+% 		\includegraphics[width=\textwidth]{../abb/ada.png}
+% \end{figure}
+% \end{columns}
+% 		\begin{scriptsize}$\quad$Abb. entnommen aus Ref. a\end{scriptsize}
+% \end{columns}
+% \end{frame}
+% %   \section{Theoretische Grundlagen}
+%      
+% \begin{frame}[plain]{Strahlende und strahlungslose \"Uberg\"ange}
+% 
+% \begin{columns}[c]
+%  \column{.55\textwidth}
+%   \begin{figure}
+% 	\includegraphics[width=\textwidth]{../abb/Jablonski.png}
+% 	\caption{Jablonski-Schema, entnommen aus \alert{Itoh 2012}}
+%       \end{figure}
+% 
+%  \column{.5\textwidth}
+%    \begin{block}{Strahlende \"Uberg\"ange}
+%    \begin{itemize}
+%     \item Absorption
+%     \item Lumineszenz
+%     \begin{itemize}
+%      \item Fluoreszenz (F)
+%      \item Phosphoreszenz (P)
+%     \end{itemize}
+%    \end{itemize}
+% 
+% 
+%   \end{block}
+%    \begin{block}{Strahlungslose \"Uberg\"ange}
+%     \begin{itemize}
+%      \item Internal Conversion (IC)\setbeamercolor{alerted text}{fg=red!80!black} 
+%      \item<alert@1> Intersystem Crossing (ISC)
+%      \item Vibrational Cooling (Vib) 
+%     \end{itemize}
+%   \end{block} 
+%   \end{columns}
+% \end{frame}
+% \setbeamercolor{alerted text}{fg=green!40!black}
+% 
+% \begin{frame}[plain]{Der Spin-Bahn-Kopplungsoperator $\hat{\mathcal{H}}_\mathsf{SO}$}
+% 
+% \begin{block}{Spin-Bahn-Kopplung}
+% 	\begin{itemize}
+% 		\item relativistischer Effekt
+% 		\item Beschreibung im Rahmen einer nicht-relativistischen Theorie trotzdem m\"oglich $\Rightarrow$ durch St\"orungstheorie 
+% 	\end{itemize}
+% \end{block}
+% 
+% \begin{block}{St\"orungsoperator $\hat{\mathcal{H}}_\mathsf{SO}$ basierend auf Breit-Pauli-Operator}
+% 	\begin{itemize}
+% 		\item besteht aus Ein-Elektr.-Teil $\hat{\mathcal{H}}_\mathsf{SO}^{(1)}$ und Zwei-Elektr.-Teil\footnote{\begin{scriptsize}$\hat{\mathcal{H}}_\mathsf{SO}^{(2)}$ meist n\"aherungsweise ber\"ucksichtigt als Korrektur zu den Kernladungen $Z_A$		                                                                                                                                                                                                                                \end{scriptsize}} $\hat{\mathcal{H}}_\mathsf{SO}^{(2)}$
+% 	\vspace{-.3cm}
+% 	\begin{equation} 
+% 		\hat{\mathcal{H}}_\mathsf{SO}^{(1)} = \frac{e^2}{2m_e^2c^2}\sum\limits_{i=1}^N\sum\limits_{A=1}^{N_A}\frac{Z_A}{r^3_{iA}}\hat{\mathbf{s}}_i\hat{\mathbf{l}}_{iA} 
+% 	\end{equation}
+% \vspace{-0.25cm}
+% 	 \begin{itemize}
+% \begin{scriptsize}		\item mit Elektronen- und Kernanzahl $N$ bzw. $N_A$
+% 		\item Kernladungszahl $Z_A$
+% 	 	\item Kern-Elektronabstand $r_{iA}=\left|\mathbf{r}_i-\mathbf{R}_A\right|$
+% 		\item Spin-Operator $\hat{\mathbf{s}}_i$ des $i$-ten Elektrons 
+% 		\item Bahndrehimpuls-Operator $\hat{\mathbf{l}}_{iA} = \mathbf{r}_{iA}\times\hat{\mathbf{p}}_i$ des $i$-ten Elektr. bzgl. Kern A   \end{scriptsize}
+% 	 \end{itemize}
+% \end{itemize}
+% \end{block}
+% \end{frame}
+% 
+% 
+% \begin{frame}[plain]{Zeitabh\"angige Methode zur Berechnung von ISC-Raten}
+%   \begin{block}{Im Programm VIBES (Etinski et al. 2011) implementierte zeitabh\"angige Methode}
+%     \begin{itemize}
+%       \item beruht u. a. auf folgenden N\"aherungen:
+%       \begin{itemize}
+%         \item Fermis Goldene Regel (St\"orungstheorie)
+%         \item Condon-N\"aherung (nur direkte Spin-Bahn-Kopplung)
+%         \item IMDHOFAD-Modell% 
+%         \footnote{\textit{\underline{i}ndependent \underline{m}ode \underline{d}isplaced} \underline{HO} \textit{w. \underline{f}req. \underline{a}lteration and \underline{d}ushinsky rot.}} $\Rightarrow$ Zweizustandsmodell
+%       \end{itemize}
+%       \item f\"ur $S_a${}$\rightarrow${}$T_b$-\"Ubergang bei $0\,$K:%
+% \begin{equation}\label{gl:corr}
+%   k_\mathsf{ISC} = \frac{1}{\hbar}|\langle S_a|\hat{\mathcal{H}}_\mathsf{SO}|T_b\rangle|^2_{\mathbf{q}_{S,0}}\int_{-\infty}^\infty G(t)e^{\frac{it}{\hbar}(\Delta E^0_{ST}+E_{S,\mathsf{vib},0})}\mathsf{d}t
+% \end{equation}
+%       \item $G(t)$: erzeugende Funktion, basierend auf Mehlers Formel\footnote{\alert{Mehler 1866}, \alert{Markham 1959}, \alert{Etinski et al. 2011 Supp. Inf.}} 
+% \end{itemize}
+% %       \begin{itemize}
+% % \item Gr\"o\ss{}en:
+% % \begin{itemize}
+% %   \item $k^\mathsf{corr}_\mathsf{ISC}$ - berechnete ISC-Raten
+% %   \item $\mathbf{q}_{S_a,0}$ - Minimumsgeometrie
+% % \end{itemize}
+% % 
+% %     \end{itemize}
+%   \end{block}
+% \end{frame}
+% 
+% 
+% 
+% % \input{einleitung_vmsc}
+% % \input{motivation_vmsc}
+% 
+% % \section{Diskussion der Ergebnisse}
+% \begin{frame}[plain]{\"Uberblick \"uber die durchgef\"uhrten Berechnungen}
+% \begin{columns}[t]
+% \column{.7\textwidth}  
+%   \begin{block}{\begin{small}Geom.-Optimierungen/Normalmodenanalysen                                                              \end{small}}\begin{footnotesize}
+%     \begin{itemize}
+% 		\item Gaussian 09, (TD-)DFT/B3LYP/TZVP-Niveau 
+% 		\item $S_0, S_1$ und $T_1$ (teilweise auch $S_2$)
+%     \end{itemize}                 \end{footnotesize}
+% 	
+%   \end{block}
+% 
+% \begin{block}{\begin{small}$\hat{\mathcal{H}}_\mathsf{SO}$-Matrixelemente                                                            \end{small}}\begin{footnotesize}
+%   \begin{itemize}
+% 	\item \textsc{Molpro} 2012.1, [6,5] bis [10,10]CASSCF
+%  \newline je 3 Basiss\"atze: 6-31G*, 6-311G*, 6-311+G*  
+% 	\item $\langle S_1|\mathcal{\hat{H}}_\mathrm{SO}|T_{1i}\rangle$ an $S_1$-B3LYP-Geometrie
+%    \item $\langle T_{1i}|\mathcal{\hat{H}}_\mathrm{SO}|S_0\rangle$ an $T_1$-B3LYP-Geometrie
+%   \end{itemize}               \end{footnotesize}
+% \end{block}
+% 
+% \begin{block}{\begin{small}ISC-Raten                                                            \end{small}}\begin{footnotesize}
+%   \begin{itemize}
+% 	\item VIBES, dynamischer Zweig (\alert{Etinski et al. 2011})
+% 	\item D\"ampfungsparameter $\eta$ variiert ($0\text,5-20\,$cm$^{-1}$) 
+%   \end{itemize}               \end{footnotesize}
+% \end{block}
+% \column{.15\textwidth}
+% \begin{block}{\begin{footnotesize} Monothion \end{footnotesize}}
+%   \begin{figure}
+%   	 	\includegraphics[width=0.7\textwidth]{../abb/adathio_3d.png}
+%   \end{figure}
+% \end{block}
+% \begin{block}{\begin{footnotesize} Dithione \end{footnotesize}}
+%   \begin{figure}
+%   	 	\includegraphics[width=0.75\textwidth]{../abb/di26_3d.png}
+%   \newline\begin{scriptsize}2,6-Dithion \end{scriptsize}
+%   \\[0.3cm]
+%   	 	\includegraphics[width=0.75\textwidth]{../abb/di24_3d.png}
+%   \newline\begin{scriptsize}2,4-Dithion \end{scriptsize}
+%   \end{figure}
+% 
+% \end{block}
+% 
+% \column{.15\textwidth}
+% \begin{block}{\begin{footnotesize} Trithione \end{footnotesize}}
+%   \begin{figure}
+%   	 	\includegraphics[width=0.75\textwidth]{../abb/tri_a6_3d.png}
+%   \newline\begin{scriptsize}$\text{2,4,6-Trithion}$\end{scriptsize}
+%   \\[0.3cm]
+%   	 	\includegraphics[width=0.75\textwidth]{../abb/tri_b9_3d.png}
+%   \newline\begin{scriptsize}$\text{2,4,9-Trithion}$\end{scriptsize}
+%   \\[0.3cm]
+%   	 	\includegraphics[width=0.75\textwidth]{../abb/tri_c10_3d.png}
+%   \newline\begin{scriptsize}$\text{2,4,10-Trithion}$\end{scriptsize}
+%   \end{figure}
+% \end{block}
+% \end{columns}
+% \end{frame}
+% 
+% \begin{frame}[plain]{Adamantanthion - Minimumsgeometrien}
+% %   \begin{block}
+% %     	\begin{scriptsize}
+% 
+% 	 \begin{tabular}{lcccc}
+% &
+% 	 	\includegraphics[width=0.18\textwidth]{../abb/adathio_S0opt.png}
+% &
+% 	 	\includegraphics[width=0.18\textwidth]{../abb/adathio_S1opt.png}
+% &
+% 	 	\includegraphics[width=0.18\textwidth]{../abb/adathio_T1opt.png}
+% &
+% 	 	\includegraphics[width=0.18\textwidth]{../abb/adathio_S2opt.png}
+% \\
+% Zustand & $S_0$ & $S_1$ & $T_1$ & $S_2$ \\[0.15cm]
+% \parbox{0.14\textwidth}{Neiguns\-winkel} & $0\text,0$\textdegree & $19\text,6$\textdegree & $24\text,0$\textdegree & $31\text,5$\textdegree \\[0.15cm]
+% \parbox{0.14\textwidth}{Charakter} &  & $n${}$\rightarrow${}$\pi^*$ & $n${}$\rightarrow${}$\pi^*$ &$\pi${}$\rightarrow${}$\pi^*$  \\[0.15cm]
+% Sonstiges &  & \parbox{0.18\textwidth}{\begin{scriptsize}symmetrie-verboten                                                         \end{scriptsize}} & \parbox{0.18\textwidth}{\begin{scriptsize}spin-verboten                                                                                                                                                                                             \end{scriptsize}} & \parbox{0.20\textwidth}{\begin{scriptsize}C-Ger\"ust verzerrt\newline C$_1$-C$_2$ $>$ C$_3$-C$_2$                                                                                                    \end{scriptsize}}
+% 	 \end{tabular}
+% % \end{scriptsize}
+% \end{frame}
+% 
+% \begin{frame}[plain]{Adamantanthion - Adiabatische Energiedifferenzen}
+% \vspace{-0.7cm}
+% \begin{columns}[c]
+% 	 \column{0.7\textwidth}
+% \vspace{-0.5cm}
+% \begin{figure}
+%   \includegraphics[width=1\textwidth]{../abb/tabfig_ada_energy.png}\\
+%   \begin{scriptsize}Adiabatische Energiedifferenzen $\Delta E_\mathsf{ST}^0$ auf (TD-)DFT/B3LYP/TZVP-Niveau  \end{scriptsize}
+% \end{figure}
+% % \vspace{-0.5cm}
+% % \begin{block}{Vergleich mit Literatur}
+% % \begin{itemize}
+% % 	\item gro\ss{}e $S_2$/$S_1$-Abst\"ande typisch f\"ur Thiocarbonyle\footnote{\alert{Maciejewski and Steer 1992}}
+% %    \item sehr geringer $T_2$/$T_1$-Abstand \newline$\Rightarrow$ $T_2$ sollte mit einbezogen werden
+% % \end{itemize}
+% % \end{block} 
+% \column{0.3\textwidth}
+% \begin{figure}
+% 	\includegraphics[width=0.9\textwidth]{../abb/ada_energy_exp.png}
+% \end{figure}
+% \vspace{-0.5cm}
+% \begin{scriptsize} \textbf{Vertikale Energieabst\"ande} in inertem Perfluoroalkan. Abb. entnommen aus \alert{Falk and Steer 1990}.\end{scriptsize}
+% 
+% \end{columns}
+% %  \end{block}
+% \end{frame}
+% 
+% \begin{frame}[plain]{Adamantanthion - $\hat{\mathcal{H}}_\mathsf{SO}$-Matrixelemente und ISC-Raten}
+% \vspace{-0.5cm}
+% \begin{columns}[c]
+% \column{.35\textwidth}
+% \begin{table}
+% \begin{small}Berechnete $\mathcal{\hat{H}}_\mathsf{SO}$-Matrixelemente\end{small}
+%  \begin{tabular}{cc}
+%  \toprule
+% %  	\includegraphics[width=\textwidth]{../abb/tabfig_ada_lscpl.png}
+%   $S_a$ & $\dfrac{|\langle S_a|\mathcal{\hat{H}}_\mathrm{SO}|T_{1}\rangle|^2}{h^2c^2}$  \\
+%   \midrule
+%         & [cm$^{-2}$] \\
+%  \midrule   
+%  $S_1$ & $0\text,42$ \\
+%  $S_2$ & $9200$ \\
+%  $S_0$ & $16300$ \\
+%  \bottomrule  
+%  \end{tabular}
+%  \end{table}
+% \column{.7\textwidth}
+% \begin{block}{Regel von El-Sayed}\begin{small}
+% 	ISC-Rate gro\ss{}, wenn anderer Orbitalcharakter\footnote{\alert{El-Sayed 1963}}
+% \begin{itemize}
+% 	\item $S_1$ und $T_1$ beide $n${}$\rightarrow${}$\pi^*$\newline$\Rightarrow$ geringe Werte
+%    \item $S_2$: $\pi${}$\rightarrow${}$\pi^*$ 
+% \end{itemize}
+% \end{small}
+% \end{block}
+% \end{columns}
+% \begin{block}{ISC-Raten}
+% \begin{itemize}\begin{small}
+% 	\item $S_1${}$\rightarrow${}$T_1$-Rate: $3\text,6\cdot10^4${}$\,-${} $2\text,2\cdot10^{5}\,$s$^{-1}$; gr\"o\ss{}er bei kleinerem $\eta$
+% 	 \begin{itemize}
+% 		\item Abh\"angigkeit von $\eta$ wegen kleinem $\Delta E_\mathsf{ST}^0$ 
+% 	 \end{itemize}
+%    \item $S_2${}$\rightarrow${}$T_1$-Rate: $1\text,9\cdot10^{10}\,$s$^{-1}$ unabh\"angig von $\eta$ 
+%    \item $T_1${}$\rightarrow${}$S_0$-Rate: exakt $0\Rightarrow$ Fehler aufgrund Artefakt in kart. Koord.
+% \end{small}\end{itemize}
+% \end{block}
+% \end{frame}
+% 
+% 
+% 
+% 
+% % \input{technDet}
+% % \input{ergebnisse_vmsc}
+% 
+% % \section*{Zusammenfassung}
+% \begin{frame}[plain]{Zusammenfassung}
+%   \begin{block}{Adamantanthion}
+%     \begin{itemize}
+%      \item Energieabst\"ande und Orbitalcharakter: gute \"Ubereinstimmung mit Exp.$^a$
+%      \item schneller $S_2${}$\rightarrow${}$T_1$-\"Ubergang, wie in Exp. beobachtet\footnote{\alert{Falk and Steer 1990}}
+% 	  \item $S_1${}$\rightarrow${}$T_1$-\"Ubergang vergleichsweise langsam, aber laut Exp$^a$.: ISC-Quantenausbeute aus $S_1$ nahe 1\newline$\Rightarrow$ vermutlich durch schnellen $S_1${}$\rightarrow${}$T_2$-\"Ubergang
+%     \end{itemize}
+% 
+%   \end{block}
+%   \begin{block}{H\"oher substituierte Adamantanthione}
+% %        \begin{itemize}
+%      $\Rightarrow$ siehe Masterarbeit
+% % 	\end{itemize}
+%   \end{block}
+% \end{frame}
+% 
+% \begin{frame}[plain]{Ausblick}
+% 	\begin{block}{M\"ogliche zuk\"unftige Untersuchungen}
+% 		\begin{itemize}
+% 			\item Einbeziehen h\"oherer Triplettzust\"ande
+% 			\item Geometrieoptimierungen mit Multireferenzmethoden
+% 			\item Simultane Untersuchung von IC und ISC mit semiklassischer Dynamik (surface hopping) 
+% 		\end{itemize}
+% 	\end{block}
+% \end{frame}
+% 
+% \begin{frame}[plain]{Danksagungen}
+% \begin{block}{F\"ur sein gro\ss{}es Vertrauen und viel Geduld}
+% 
+% \begin{small}   Prof. Dr. Peter Saalfrank \end{small}
+% 
+% \end{block}
+% 
+% \begin{block}{F\"ur hilfreiche Diskussionen und Anregungen}
+% 
+% \begin{footnotesize} Dr. Shiladitya Banerjee,
+%  Dr. Gereon Flo\ss{}, 
+% Dr. Boyke Sch\"onborn, 
+%  Dr. habil. Dominik Kr\"oner, 
+%  PD Dr. Tillmann Klamroth, 
+%  Dr. Jan G\"otze, 
+%  Dr. Jonas Wirth,
+%  M. Sc. Sophia Heiden, M. Sc. D\"orthe Gericke und M. Sc. Martin K\"argell\end{footnotesize}
+% \end{block}  
+% 
+% 
+% \begin{block}{F\"ur die gute Arbeitsatmosph\"are}
+%  AG Saalfrank und AG K\"orzd\"orfer
+% \end{block}
+% 
+% 
+% \begin{block}{F\"ur die liebevolle, ausdauernde Unterst\"utzung}
+%  Meinen Eltern Ludmila und Ralf-Dieter Scholz sowie meiner Freundin Sandra Engel
+% \end{block}
+% 
+% \end{frame}
+% \appendix
+% %\input{anhang_vmsc}
+% \begin{frame}[plain]{Die Dushinsky-Transformation}
+%   \begin{block}{}
+% % Lineare, orthogonale Transformation zwischen Normalmodenkoordinaten $\mathbf{Q}$ und $\mathbf{Q'}$   
+% \begin{equation}
+% 	\mathbf{Q'= J \cdot Q + D}
+% \end{equation}
+% 
+%     \begin{itemize} 
+%       \item Displacement $\mathbf{D}$ - Verschiebungsvektor 
+%       \item Dushinsky-Rotationsmatrix $\mathbf{J}$ - Mode-Mixing
+%     \end{itemize}
+%   \end{block}
+%   \begin{figure}
+%     \includegraphics[width=.8\textwidth]{../abb/dusch.pdf}
+%     \caption{a) nur $\mathbf{D}$ ohne $\mathbf{J}$ (IMDHO(FA)), b) mit  $\mathbf{J}$ (IMDHOFAD)\footnote{\textit{\underline{i}ndependent \underline{m}ode \underline{d}isplaced \underline{h}armonic \underline{o}scillator \newline(with \underline{f}requency \underline{a}lteration and \underline{d}ushinsky rotation)}}}
+%   \end{figure}
+% \end{frame}
+% 
+% \begin{frame}[plain]{Erzeugende Funktion $G(t)$}
+% 
+% \begin{align*}\label{gl:gen_fnct}
+%   G(t) =&\; 2^\frac{N}{2}\sqrt{\frac{\mathrm{det}(\mathbf{S^{-1}}\boldsymbol{\Omega}_S\boldsymbol{\Omega}_T)}{\mathrm{det}(\mathbf{J\T}\boldsymbol{\Omega}_T\mathbf{ BJ + }\boldsymbol{\Omega}_S)\cdot \mathrm{det}(\mathbf{J\T}\boldsymbol{\Omega}_T\mathbf{ B^{-1}J + }\boldsymbol{\Omega}_S)}} \\
+%   &\cdot\exp(\mathbf{D\T(}\boldsymbol{\Omega}_T\mathbf{ BJ(J\T}\boldsymbol{\Omega}_T\mathbf{BJ + }\boldsymbol{\Omega}_S\mathbf{)^{-1}J\T}\boldsymbol{\Omega}_T\mathbf{ B - }\boldsymbol{\Omega}_T\mathbf{ B) D}).
+% \end{align*}
+% \begin{block}{}
+% \begin{itemize}
+%   \item $N$: Anzahl an Normalmoden
+%   \item $\mathbf{S, B} \text{ und } \boldsymbol{\Omega}_{S/T}$: Diagonalmatrizen mit 
+% \begin{itemize}
+% 	\item $S_{ii}=\sinh(i\omega_{T,i}t)$
+% 	\item $B_{ii}=\tanh(\frac{1}{2}i\omega_{T,i}t)$
+% 	\item $\Omega_{T,ii} = \omega_{T,i}$
+%    \item $\Omega_{S,ii} = \omega_{S,i}$
+% \end{itemize}
+%  \item $\mathbf{J,D}$ siehe Dushinsky-Transformation
+% \end{itemize}
+% 
+%   
+% \end{block}
+% 
+% \end{frame}
+% 
+% 
+% \begin{frame}[plain]{Anwendungen f\"ur Diamantoide und ihre Derivate}
+%   \begin{columns}[t]
+%    \column{.1\textwidth}
+%    \column{.8\textwidth}
+%   \begin{block}{Molekulare Elektronik}
+%     \begin{itemize}
+%      \item monochromatische Elektronenemitter\footnote{\alert{Drummond et al. 2005}, \alert{Yang et al. 2007}}
+%      \item nanoskalige Elektronikbauteile\footnote{\alert{Fokin et al. 2007}}
+%     \end{itemize}
+%   \end{block}
+%   \column{.1\textwidth}
+%   \end{columns}
+%   \begin{columns}[t]
+%    \column{.5\textwidth}
+%   \begin{block}{Polymere}
+%     \begin{itemize}
+%      \item als Abstandshalter\footnote{\alert{Sinkel et al. 2009}}
+%      \item f\"ur mechanisch und optisch widerstandsf\"ahige Materialien$^a$
+%     \end{itemize}
+%   \end{block}
+%    \column{.5\textwidth}
+%   \begin{block}{Medizin}
+%     \begin{itemize}
+%      \item antivirale Eigenschaften, z.B. gegen HIV\footnote{\alert{Chen et al. 1994}, \alert{Chen et al. 1996}},  SARS\footnote{\alert{Spasov et al. 2000}}
+%      \item Behandlung von Parkinson und Alzheimer$^b$
+%     \end{itemize}
+%   \end{block}
+%   \end{columns}
+% \end{frame}
+% 
+% \begin{frame}[plain]{Chemische Eigenschaften von Adamantanthion}
+%   \begin{block}{Photochemie des Adamantanthions}
+%     \begin{itemize}
+%      \item Photochemisch sehr aktiv\footnote{\alert{Lawrence et al. 1976-1}}, auch aus h\"oher angeregten Zust\"anden\footnote{\alert{Lawrence et al. 1976-2}}, z.B. Bildung von
+% 	  \begin{itemize}
+% 	  	\item Dithianen (Dimerisierung)
+% 	   \item Thianen (Addition an C=C-Doppelbindung)
+% 		\item Thiolen und Thiolestern (Insertion in C-H-Bindung)
+% 	  \end{itemize}
+% 
+% %      \item nach Bestrahlung bspw. Dimerbildung (Dithianbildung) und L\"osungsmittelinsertion (Thianbildung)
+%     \end{itemize}
+%   \end{block}
+% \begin{figure}
+% 	\includegraphics[width=\textwidth]{../abb/ada_photochem.png}
+% 	\\\begin{scriptsize}Abb. entnommen aus Ref. b\end{scriptsize}
+% \end{figure}
+% \end{frame}
+% 
+% \begin{frame}[plain]{Adamantanthion - $\hat{\mathcal{H}}_\mathsf{SO}$-Matrixelemente und ISC-Raten}
+% \vspace{-0.5cm}
+% \begin{columns}[t]
+% \column{.55\textwidth}	
+%  \begin{figure}
+%  	\includegraphics[width=\textwidth]{../abb/tabfig_ada_lscpl.png}
+%  \end{figure}
+% \column{.5\textwidth}
+% \begin{block}{Regel von El-Sayed}\begin{small}
+% 	ISC-Rate gro\ss{} wenn Orbitalcharakter verschieden\footnote{\alert{El-Sayed 1963}}
+% \begin{itemize}
+% 	\item $S_1$ und $T_1$: $n${}$\rightarrow${}$\pi^*$\newline$\Rightarrow$ geringe Werte
+%    \item $S_2$: $\pi${}$\rightarrow${}$\pi^*$ 
+% \end{itemize}
+% \end{small}
+% \end{block}
+% \end{columns}
+% \begin{block}{ISC-Raten}
+% \begin{itemize}\begin{small}
+% 	\item $S_1${}$\rightarrow${}$T_{1x/y}$-Raten: $9\text,6\cdot10^3${}$\,-${} $1\text,6\cdot10^{5}\,$s$^{-1}$ gr\"o\ss{}er bei kleinerem $\eta$
+% 	 \begin{itemize}
+% 		\item $S_1${}$\rightarrow${}$T_{1z}$-Rate um 7 Gr\"o\ss{}enordnungen geringer
+% 	 \end{itemize}
+%    \item $S_2${}$\rightarrow${}$T_{1i}$-Raten: $2\text,1\cdot10^9${}$\,-${} $1\text,1\cdot10^{10}\,$s$^{-1}$ unabh\"angig von $\eta$ 
+% \end{small}\end{itemize}
+% \end{block}
+% \end{frame}
+% 
+% %   \end{block}
+% 
+% 
+% 
+% \begin{frame}[plain]{Bemerkungen zu den Polythionen}
+% \begin{columns}[t]
+% \column{.75\textwidth}
+% 	\begin{block}{Adamantan-2,6-dithion}
+%   	\begin{itemize}
+%   		\item vergleichbar mit Adamantanthion
+% \begin{itemize}
+% 	\item nur eine C-S-Gruppe ``angeregt''
+% 	\item $S_3$ entspricht $S_2$ dort, hier aber $S_3/S_1$-Energieabstand deutlich geringer
+% \end{itemize}
+% 
+%   	\end{itemize}
+% 
+%   \end{block}
+% \column{.25\textwidth}
+% \begin{figure}
+% 	\includegraphics[width=\textwidth]{../abb/di26_all_states.png}
+% \end{figure}
+% 
+% \end{columns}
+% \begin{columns}[t]
+% \column{.75\textwidth}
+%   \begin{block}{Adamantan-2,4-dithion und -trithione}
+%   	\begin{itemize}
+% \begin{small}  		\item $\pi^*$-Orbital bindend f\"ur benachbarte C-S\newline$\Rightarrow$ signifikante attraktive Wechselwirkung f\"ur $n${}$\rightarrow${}$\pi^*$-Zust\"ande $S_1$ und $T_1$
+% 		\item mehr S-Atome $\Rightarrow$ gr\"o\ss{}ere $\hat{\mathcal{H}}_\mathsf{SO}$-Matrixelemente (ca. Faktor 10-100 relativ zu Adamantanthion)\end{small}
+%   	\end{itemize}
+% 
+%   \end{block}
+% \column{.25\textwidth}
+% \begin{figure}
+% 	\includegraphics[width=\textwidth]{../abb/di24_all_states.png}
+% \end{figure}
+% 
+% \end{columns}
+% 
+% \end{frame}
+
+
+
+\end{document}
