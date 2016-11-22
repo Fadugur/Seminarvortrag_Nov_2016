@@ -144,7 +144,11 @@
 \begin{frame}{General motivation}
   \begin{columns}[t]
   \column{.7\textwidth}
-    \begin{block}{Why investigate fs-laser-driven surface dynamics?}
+    \begin{block}
+     
+    \end{block}
+
+    \begin{block}{Why investigate fs-laser-driven dynamics?}
       \begin{itemize}
       \item gain fundamental understanding of adsorbate bonding and catalysis 
       \item Also, possible application in catalysis: ``femtochemistry'' (= new pathways)  
