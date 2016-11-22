@@ -1,19 +1,19 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/TeX Live for SUSE Linux) (format=pdflatex 2014.12.4)  16 NOV 2016 20:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/TeX Live for SUSE Linux) (preloaded format=pdflatex 2016.11.18)  22 NOV 2016 17:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **Robert_Scholz_Seminar_30Nov2016.tex
 (./Robert_Scholz_Seminar_30Nov2016.tex
-LaTeX2e <2011/06/27>
-Babel <3.9f> and hyphenation patterns for 78 languages loaded.
+LaTeX2e <2015/01/01> patch level 2
+Babel <3.9m> and hyphenation patterns for 79 languages loaded.
 (/usr/share/texmf/tex/latex/beamer/beamer.cls
 (/usr/share/texmf/tex/latex/beamer/beamerbasercs.sty
-Package: beamerbasercs 2013/01/04 (rcs-revision 9a97a4eee358)
+Package: beamerbasercs 2015/03/08 (rcs-revision 368aa9ba9d38)
 )
-Document Class: beamer 2013/01/04 3.26 A class for typesetting presentations (r
-cs-revision e81e0c94bcc6)
+Document Class: beamer 2015/01/05 3.36 A class for typesetting presentations (r
+cs-revision 8a39122e1f63)
 (/usr/share/texmf/tex/latex/beamer/beamerbasemodes.sty
-Package: beamerbasemodes 2012/04/15 (rcs-revision cc6557182d97)
+Package: beamerbasemodes 2013/09/03 (rcs-revision 768f2d98ca64)
 \beamer@tempbox=\box26
 \beamer@tempcount=\count79
 \c@beamerpauses=\count80
@@ -74,10 +74,10 @@ Package ifpdf Info: pdfTeX in PDF mode is detected.
 \beamer@tocsectionnumber=\count101
 
 (/usr/share/texmf/tex/latex/beamer/beamerbaseoptions.sty
-Package: beamerbaseoptions 2010/04/27 (rcs-revision 982469101dd6)
+Package: beamerbaseoptions 2013/03/10 (rcs-revision 47431932db0d)
 
 (/usr/share/texmf/tex/latex/graphics/keyval.sty
-Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks14
 ))
 \beamer@paperwidth=\skip42
@@ -107,14 +107,14 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@dimlist=\toks15
 )
 (/usr/share/texmf/tex/latex/base/size11.clo
-File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 (/user/scholz/texmf/tex/latex/pgf/basiclayer/pgfcore.sty
 (/usr/share/texmf/tex/latex/graphics/graphicx.sty
-Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
 (/usr/share/texmf/tex/latex/graphics/graphics.sty
-Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
 
 (/usr/share/texmf/tex/latex/graphics/trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
@@ -122,7 +122,7 @@ Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 (/usr/share/texmf/tex/latex/latexconfig/graphics.cfg
 File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
-Package graphics Info: Driver file: pdftex.def on input line 91.
+Package graphics Info: Driver file: pdftex.def on input line 94.
 
 (/usr/share/texmf/tex/latex/pdftex-def/pdftex.def
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
@@ -327,6 +327,9 @@ Package: xxcolor 2003/10/24 ver 0.1
 \XC@nummixins=\count116
 \XC@countmixins=\count117
 )
+(/usr/share/texmf/tex/generic/oberdiek/atbegshi.sty
+Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
+)
 (/usr/share/texmf/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
 
@@ -369,7 +372,7 @@ Package: hopatch 2012/05/28 v1.2 Wrapper for package hooks (HO)
 Package: xcolor-patch 2011/01/30 xcolor patch
 Package: atveryend 2011/06/30 v1.8 Hooks at the very end of document (HO)
 Package atveryend Info: \enddocument detected (standard20110627).
-Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
+Package hobsub Info: Skipping package `atbegshi' (already loaded).
 Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
 Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
 )
@@ -405,7 +408,7 @@ Package hyperref Info: Bookmarks ON on input line 4688.
 
 (/usr/share/texmf/tex/latex/url/url.sty
 \Urlmuskip=\muskip10
-Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5041.
 \XeTeXLinkMargin=\dimen165
@@ -447,7 +450,7 @@ Package: beamerbaserequires 2010/05/01  (rcs-revision efa082c6111d)
 Package: beamerbasecompatibility 2012/05/01  (rcs-revision 67c48b3b652d)
 )
 (/usr/share/texmf/tex/latex/beamer/beamerbasefont.sty
-Package: beamerbasefont 2012/09/19  (rcs-revision 733629cd0c6c)
+Package: beamerbasefont 2015/01/05  (rcs-revision b4b4bee242e2)
 
 (/usr/share/texmf/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
@@ -468,13 +471,13 @@ Package: translator 2010/06/12 ver 1.10
 
 (/usr/share/texmf/tex/latex/beamer/translator/translator-language-mappings.tex)
 )) (/usr/share/texmf/tex/latex/beamer/beamerbasemisc.sty
-Package: beamerbasemisc 2012/02/24  (rcs-revision 2ff5461be705)
+Package: beamerbasemisc 2013/09/03  (rcs-revision a55719c41d85)
 )
 (/usr/share/texmf/tex/latex/beamer/beamerbasetwoscreens.sty
 Package: beamerbasetwoscreens 2010/05/01  (rcs-revision efa082c6111d)
 )
 (/usr/share/texmf/tex/latex/beamer/beamerbaseoverlay.sty
-Package: beamerbaseoverlay 2012/11/11  (rcs-revision 6afbc49b1109)
+Package: beamerbaseoverlay 2013/12/25  (rcs-revision f6bd5e3805da)
 \beamer@argscount=\count126
 \beamer@lastskipcover=\skip44
 \beamer@trivlistdepth=\count127
@@ -483,7 +486,7 @@ Package: beamerbaseoverlay 2012/11/11  (rcs-revision 6afbc49b1109)
 Package: beamerbasetitle 2010/09/21  (rcs-revision f0446ed0b6ae)
 )
 (/usr/share/texmf/tex/latex/beamer/beamerbasesection.sty
-Package: beamerbasesection 2013/01/04  (rcs-revision 54309ceef997)
+Package: beamerbasesection 2013/06/07  (rcs-revision 60b9fe0f342f)
 \c@lecture=\count128
 \c@part=\count129
 \c@section=\count130
@@ -491,7 +494,7 @@ Package: beamerbasesection 2013/01/04  (rcs-revision 54309ceef997)
 \c@subsubsection=\count132
 )
 (/usr/share/texmf/tex/latex/beamer/beamerbaseframe.sty
-Package: beamerbaseframe 2012/12/26  (rcs-revision 1443917db2cf)
+Package: beamerbaseframe 2014/02/20  (rcs-revision 4b8ceeeff434)
 \beamer@framebox=\box40
 \beamer@frametitlebox=\box41
 \beamer@zoombox=\box42
@@ -508,7 +511,7 @@ Package: beamerbaseframe 2012/12/26  (rcs-revision 1443917db2cf)
 \c@framenumber=\count136
 )
 (/usr/share/texmf/tex/latex/beamer/beamerbaseverbatim.sty
-Package: beamerbaseverbatim 2012/08/30  (rcs-revision dfdb135076b3)
+Package: beamerbaseverbatim 2015/01/05  (rcs-revision 431510bb5890)
 \beamer@verbatimfileout=\write4
 )
 (/usr/share/texmf/tex/latex/beamer/beamerbaseframesize.sty
@@ -520,25 +523,25 @@ Package: beamerbaseframesize 2011/09/12  (rcs-revision 70f9d8411e54)
 \beamer@framesubtitletoks=\toks29
 )
 (/usr/share/texmf/tex/latex/beamer/beamerbaseframecomponents.sty
-Package: beamerbaseframecomponents 2012/09/13  (rcs-revision dcd846607320)
+Package: beamerbaseframecomponents 2013/10/18  (rcs-revision 5cf6c5555a45)
 \beamer@footins=\box44
 )
 (/usr/share/texmf/tex/latex/beamer/beamerbasecolor.sty
-Package: beamerbasecolor 2010/06/06  (rcs-revision d1a9b48be06d)
+Package: beamerbasecolor 2015/02/21  (rcs-revision d944b04ee2d5)
 )
 (/usr/share/texmf/tex/latex/beamer/beamerbasenotes.sty
 Package: beamerbasenotes 2012/12/19  (rcs-revision 1686da3db3c9)
 \beamer@frameboxcopy=\box45
 )
 (/usr/share/texmf/tex/latex/beamer/beamerbasetoc.sty
-Package: beamerbasetoc 2012/10/02  (rcs-revision 5ed0f4010e8a)
+Package: beamerbasetoc 2015/03/08  (rcs-revision 7270298bbaae)
 )
 (/usr/share/texmf/tex/latex/beamer/beamerbasetemplates.sty
 Package: beamerbasetemplates 2010/05/01  (rcs-revision efa082c6111d)
 \beamer@sbttoks=\toks30
 
 (/usr/share/texmf/tex/latex/beamer/beamerbaseauxtemplates.sty
-Package: beamerbaseauxtemplates 2012/05/01  (rcs-revision 67c48b3b652d)
+Package: beamerbaseauxtemplates 2014/06/30  (rcs-revision 580088513a67)
 
 (/usr/share/texmf/tex/latex/beamer/beamerbaseboxes.sty
 Package: beamerbaseboxes 2012/05/13  (rcs-revision 56972908a390)
@@ -555,10 +558,10 @@ Package: beamerbaseboxes 2012/05/13  (rcs-revision 56972908a390)
 \beamer@blockheadheight=\dimen175
 ))
 (/usr/share/texmf/tex/latex/beamer/beamerbaselocalstructure.sty
-Package: beamerbaselocalstructure 2012/11/13  (rcs-revision ddfba79dac19)
+Package: beamerbaselocalstructure 2014/09/10  (rcs-revision 393f6dcff371)
 
 (/usr/share/texmf/tex/latex/tools/enumerate.sty
-Package: enumerate 1999/03/05 v3.00 enumerate extensions (DPC)
+Package: enumerate 2014/10/28 v3.00 enumerate extensions (DPC)
 \@enLab=\toks31
 )
 \c@figure=\count138
@@ -567,7 +570,7 @@ Package: enumerate 1999/03/05 v3.00 enumerate extensions (DPC)
 \belowcaptionskip=\skip50
 )
 (/usr/share/texmf/tex/latex/beamer/beamerbasenavigation.sty
-Package: beamerbasenavigation 2012/04/03  (rcs-revision 42a0f21a412d)
+Package: beamerbasenavigation 2015/02/27  (rcs-revision 923f4bf87efa)
 \beamer@section@min@dim=\dimen176
 )
 (/usr/share/texmf/tex/latex/beamer/beamerbasetheorems.sty
@@ -632,7 +635,7 @@ LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
 )
 (/usr/share/texmf/tex/latex/amscls/amsthm.sty
-Package: amsthm 2004/08/06 v2.20
+Package: amsthm 2015/03/04 v2.20.2
 \thm@style=\toks37
 \thm@bodyfont=\toks38
 \thm@headfont=\toks39
@@ -658,7 +661,7 @@ Package: beamerfontthemedefault 2012/12/19  (rcs-revision 1686da3db3c9)
 Package: beamercolorthemedefault 2012/12/19  (rcs-revision 1686da3db3c9)
 )
 (/usr/share/texmf/tex/latex/beamer/themes/inner/beamerinnerthemedefault.sty
-Package: beamerinnerthemedefault 2012/05/01  (rcs-revision 67c48b3b652d)
+Package: beamerinnerthemedefault 2014/06/30  (rcs-revision 580088513a67)
 \beamer@dima=\dimen186
 \beamer@dimb=\dimen187
 )
@@ -680,27 +683,32 @@ Package: beamercolorthemeorchid 2010/06/17  (rcs-revision d02a7cf4d8ae)
 Package: beamercolorthemewhale 2010/06/17  (rcs-revision d02a7cf4d8ae)
 ))
 (/usr/share/texmf/tex/generic/babel/babel.sty
-Package: babel 2013/05/16 v3.9f The Babel package
+Package: babel 2015/08/03 3.9m The Babel package
+
+(/usr/share/texmf/tex/generic/babel-german/german.ldf
+Language: german 2014/10/10 v2.7b German support for babel (traditional orthogr
+aphy)
 
 (/usr/share/texmf/tex/generic/babel-german/germanb.ldf
-Language: germanb 2008/06/01 v2.6m German support from the babel system
+Language: germanb 2014/10/10 v2.7b German support for babel (traditional orthog
+raphy)
 
 (/usr/share/texmf/tex/generic/babel/babel.def
-File: babel.def 2013/05/16 v3.9f Babel common definitions
-LaTeX Info: Redefining \textlatin on input line 130.
+File: babel.def 2015/08/03 3.9m Babel common definitions
 \babel@savecnt=\count153
 \U@D=\dimen188
+LaTeX Info: Redefining \textlatin on input line 1431.
 )
 \l@austrian = a dialect from \language\l@german 
-Package babel Info: Making " an active character on input line 102.
-))
+Package babel Info: Making " an active character on input line 110.
+)))
 (/usr/share/texmf/tex/latex/base/inputenc.sty
-Package: inputenc 2008/03/30 v1.1d Input encoding file
+Package: inputenc 2015/03/17 v1.2c Input encoding file
 \inpenc@prehook=\toks43
 \inpenc@posthook=\toks44
 
 (/usr/share/texmf/tex/latex/base/latin1.def
-File: latin1.def 2008/03/30 v1.1d Input encoding file
+File: latin1.def 2015/03/17 v1.2c Input encoding file
 ))
 (/usr/share/texmf/tex/latex/psnfss/times.sty
 Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
@@ -710,7 +718,7 @@ Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 
 (/usr/share/texmf/tex/latex/base/t1enc.def
 File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
-LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
 ))
 (/usr/share/texmf/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2005/04/14 v1.61803 publication quality tables
@@ -920,11 +928,32 @@ _30Nov2016.toc) [2
 ] [5
 
 ]
-[6
+<figures/2TM_equs.png, id=197, 778.57887pt x 172.1069pt>
+File: figures/2TM_equs.png Graphic file (type png)
 
-] [7
+<use figures/2TM_equs.png>
+Package pdftex.def Info: figures/2TM_equs.png used on input line 194.
+(pdftex.def)             Requested size: 307.28987pt x 67.92763pt.
 
-]
+<figures/TTM_1pulse-eps-converted-to.pdf, id=199, 386.44376pt x 389.455pt>
+File: figures/TTM_1pulse-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figures/TTM_1pulse-eps-converted-to.pdf>
+Package pdftex.def Info: figures/TTM_1pulse-eps-converted-to.pdf used on input 
+line 194.
+(pdftex.def)             Requested size: 107.55333pt x 108.38702pt.
+ [6
+
+ <./figures/2TM_equs.png> <./figures/TTM_1pulse-eps-converted-to.pdf>]
+<figures/Traj_XYZTh.png, id=236, 827.9733pt x 551.9019pt>
+File: figures/Traj_XYZTh.png Graphic file (type png)
+
+<use figures/Traj_XYZTh.png>
+Package pdftex.def Info: figures/Traj_XYZTh.png used on input line 200.
+(pdftex.def)             Requested size: 307.28987pt x 204.82368pt.
+ [7
+
+ <./figures/Traj_XYZTh.png>]
 \tf@nav=\write6
 \openout6 = `Robert_Scholz_Seminar_30Nov2016.nav'.
 
@@ -934,30 +963,31 @@ _30Nov2016.toc) [2
 \tf@snm=\write8
 \openout8 = `Robert_Scholz_Seminar_30Nov2016.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 777.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 777.
- (./Robert_Scholz_Seminar_30Nov2016.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 777.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 777.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 784.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 784.
+
+(./Robert_Scholz_Seminar_30Nov2016.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 784.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 784.
 Package rerunfilecheck Info: File `Robert_Scholz_Seminar_30Nov2016.out' has not
  changed.
 (rerunfilecheck)             Checksum: E9BB2CF2769D9D3F737E9328CC21FCFF;106.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 777.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 784.
  ) 
 Here is how much of TeX's memory you used:
- 17338 strings out of 493315
- 325126 string characters out of 6145893
- 407905 words of memory out of 5000000
- 20369 multiletter control sequences out of 15000+600000
+ 17425 strings out of 493091
+ 327032 string characters out of 6142991
+ 415525 words of memory out of 5000000
+ 20477 multiletter control sequences out of 15000+600000
  18314 words of font info for 26 fonts, out of 8000000 for 9000
- 957 hyphenation exceptions out of 8191
+ 1141 hyphenation exceptions out of 8191
  48i,20n,62p,670b,922s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/base/8r.enc}</usr/share/texmf/fonts/type1/u
 rw/helvetic/uhvr8a.pfb>
-Output written on Robert_Scholz_Seminar_30Nov2016.pdf (7 pages, 29373 bytes).
+Output written on Robert_Scholz_Seminar_30Nov2016.pdf (7 pages, 758657 bytes).
 PDF statistics:
- 270 PDF objects out of 1000 (max. 8388607)
- 235 compressed objects within 3 object streams
- 15 named destinations out of 1000 (max. 500000)
- 119 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 283 PDF objects out of 1000 (max. 8388607)
+ 242 compressed objects within 3 object streams
+ 17 named destinations out of 1000 (max. 500000)
+ 134 words of extra memory for PDF output out of 10000 (max. 10000000)
 
