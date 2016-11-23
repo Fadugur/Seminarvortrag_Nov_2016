@@ -142,26 +142,26 @@
   \subsection{Motivation}
   
 \begin{frame}{General motivation}
-  \begin{columns}[t]
-  \column{.7\textwidth}
-    \begin{block}
-     
-    \end{block}
-
-    \begin{block}{Why investigate fs-laser-driven dynamics?}
+%   \begin{columns}[t]
+%   \column{.7\textwidth}
+    \begin{block}{Why investigate fs-laser-driven surface dynamics?}
       \begin{itemize}
-      \item gain fundamental understanding of adsorbate bonding and catalysis 
-      \item Also, possible application in catalysis: ``femtochemistry'' (= new pathways)  
+      \item gain fundamental understanding of adsorbate bonding \newline $\Rightarrow$ additional tool besides scattering experiments 
+      \item possible direct application in catalysis: ``femtochemistry'' \newline $\Rightarrow$ new reaction pathways opened up by fs-lasers  
       \end{itemize}
     \end{block}
-  \column{.3\textwidth}
+%   \column{.3\textwidth}
 %     \begin{block}{}  
+
       \begin{figure}
-	\includegraphics[width=\textwidth]{figures/CO_CO2.png}
-% 	\newline\begin{scriptsize}Abb. entnommen aus \alert{Fokin et al. 2008}	\end{scriptsize}
-      \end{figure}
+	\includegraphics[width=.65\textwidth]{figures/CO_CO2.png}
+      \end{figure}\vspace{-.5cm}                  
+    \begin{center}  		
+	\begin{footnotesize}CO/O-coadsorbate @ Ru(0001)\end{footnotesize} \\ \begin{scriptsize}M. Bonn \textit{et al.}, \textsc{Science} (1999) \end{scriptsize}
+    \end{center}
+      
 %     \end{block}
-  \end{columns}  
+%   \end{columns}  
 \end{frame}
 
 % \begin{frame}{CO/Ru-System}
@@ -170,7 +170,7 @@
 \begin{frame}{Specific motivation for the CO/Ru-System}
   \begin{block}{Recent Experiments partly contradict theory}
     \begin{itemize}
-     \item Ultrafast time-resolved X-Ray-sepctroscopy hints to physisorbed precursor state
+     \item Ultrafast time-resolved X-Ray-spectroscopy hints to physisorbed precursor state
      \item Recent full 6D PES does not feature physisorption well
     \end{itemize}
   \end{block}
