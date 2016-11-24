@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/TeX Live for SUSE Linux) (preloaded format=pdflatex 2016.11.18)  24 NOV 2016 14:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/TeX Live for SUSE Linux) (preloaded format=pdflatex 2016.11.18)  24 NOV 2016 14:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -939,7 +939,7 @@ LaTeX Font Info:    Font shape `T1/phv/m/it' in size <8> not available
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <6> not available
 (Font)              Font shape `T1/phv/m/sl' tried instead on input line 165.
 
-<figures/CO_CO2.png, id=108, 138.2766pt x 62.8749pt>
+<figures/CO_CO2.png, id=115, 138.2766pt x 62.8749pt>
 File: figures/CO_CO2.png Graphic file (type png)
  <use figures/CO_CO2.png>
 Package pdftex.def Info: figures/CO_CO2.png used on input line 165.
@@ -957,14 +957,14 @@ LaTeX Font Info:    Font shape `T1/phv/m/it' in size <7> not available
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <5> not available
 (Font)              Font shape `T1/phv/m/sl' tried instead on input line 228.
 
-<figures/scienceXray.png, id=176, 662.475pt x 336.50719pt>
+<figures/scienceXray.png, id=185, 662.475pt x 336.50719pt>
 File: figures/scienceXray.png Graphic file (type png)
 
 <use figures/scienceXray.png>
 Package pdftex.def Info: figures/scienceXray.png used on input line 228.
 (pdftex.def)             Requested size: 153.64493pt x 78.04198pt.
 
-<figures/XrayIntOverTime.png, id=177, 669.2503pt x 447.17062pt>
+<figures/XrayIntOverTime.png, id=186, 669.2503pt x 447.17062pt>
 File: figures/XrayIntOverTime.png Graphic file (type png)
 
 <use figures/XrayIntOverTime.png>
@@ -982,7 +982,7 @@ LaTeX Font Info:    Try loading font information for T1+ptm on input line 247.
 (/usr/share/texmf/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
-<figures/modifiedSurfScheme.png, id=211, 251.4996pt x 65.043pt>
+<figures/modifiedSurfScheme.png, id=221, 251.4996pt x 65.043pt>
 File: figures/modifiedSurfScheme.png Graphic file (type png)
 
 <use figures/modifiedSurfScheme.png>
@@ -992,52 +992,96 @@ Package pdftex.def Info: figures/modifiedSurfScheme.png used on input line 247.
  [6
 
  <./figures/modifiedSurfScheme.png>]
-<figures/2TM_equs.png, id=244, 778.57887pt x 172.1069pt>
+<figures/6dimScheme.png, id=256, 284.6097pt x 207.12433pt>
+File: figures/6dimScheme.png Graphic file (type png)
+
+<use figures/6dimScheme.png>
+Package pdftex.def Info: figures/6dimScheme.png used on input line 253.
+(pdftex.def)             Requested size: 122.91406pt x 89.45045pt.
+ [7
+
+ <./figures/6dimScheme.png>]
+<figures/2TM_equs.png, id=290, 778.57887pt x 172.1069pt>
 File: figures/2TM_equs.png Graphic file (type png)
 
 <use figures/2TM_equs.png>
-Package pdftex.def Info: figures/2TM_equs.png used on input line 257.
+Package pdftex.def Info: figures/2TM_equs.png used on input line 262.
 (pdftex.def)             Requested size: 307.28987pt x 67.92763pt.
 
-<figures/TTM_1pulse-eps-converted-to.pdf, id=245, 386.44376pt x 389.455pt>
+<figures/TTM_1pulse-eps-converted-to.pdf, id=291, 386.44376pt x 389.455pt>
 File: figures/TTM_1pulse-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/TTM_1pulse-eps-converted-to.pdf>
 Package pdftex.def Info: figures/TTM_1pulse-eps-converted-to.pdf used on input 
-line 257.
+line 262.
 (pdftex.def)             Requested size: 107.55333pt x 108.38702pt.
- [7
+ [8
 
  <./figures/2TM_equs.png> <./figures/TTM_1pulse-eps-converted-to.pdf>]
-<figures/scheme_nonadiab.png, id=284, 736.25063pt x 514.17094pt>
+<figures/scheme_nonadiab.png, id=329, 736.25063pt x 514.17094pt>
 File: figures/scheme_nonadiab.png Graphic file (type png)
 
 <use figures/scheme_nonadiab.png>
-Package pdftex.def Info: figures/scheme_nonadiab.png used on input line 263.
+Package pdftex.def Info: figures/scheme_nonadiab.png used on input line 268.
 (pdftex.def)             Requested size: 215.10196pt x 150.21983pt.
- [8
+ [9
 
  <./figures/scheme_nonadiab.png>]
-<figures/Langevin_eq.png, id=315, 888.8465pt x 162.42123pt>
+<figures/Langevin_eq.png, id=361, 888.8465pt x 162.42123pt>
 File: figures/Langevin_eq.png Graphic file (type png)
 
 <use figures/Langevin_eq.png>
-Package pdftex.def Info: figures/Langevin_eq.png used on input line 280.
+Package pdftex.def Info: figures/Langevin_eq.png used on input line 283.
 (pdftex.def)             Requested size: 307.28987pt x 56.15186pt.
- [9
+ [10
 
- <./figures/Langevin_eq.png>] [10
+ <./figures/Langevin_eq.png>] [11
 
 ]
-<figures/Traj_XYZTh.png, id=380, 827.9733pt x 551.9019pt>
+<figures/GLO_eqs.png, id=428, 996.72375pt x 519.9425pt>
+File: figures/GLO_eqs.png Graphic file (type png)
+
+<use figures/GLO_eqs.png>
+Package pdftex.def Info: figures/GLO_eqs.png used on input line 302.
+(pdftex.def)             Requested size: 152.10828pt x 79.34467pt.
+
+Overfull \hbox (13.82878pt too wide) in paragraph at lines 302--302
+ [] 
+ []
+
+<figures/GLO.png, id=429, 1005.56477pt x 928.09134pt>
+File: figures/GLO.png Graphic file (type png)
+ <use figures/GLO.png>
+Package pdftex.def Info: figures/GLO.png used on input line 302.
+(pdftex.def)             Requested size: 169.01035pt x 155.98909pt.
+
+Overfull \hbox (15.36542pt too wide) in paragraph at lines 302--302
+ [] 
+ []
+
+[12
+
+ <./figures/GLO_eqs.png> <./figures/GLO.png>]
+<figures/Traj_XYZTh.png, id=462, 827.9733pt x 551.9019pt>
 File: figures/Traj_XYZTh.png Graphic file (type png)
 
 <use figures/Traj_XYZTh.png>
-Package pdftex.def Info: figures/Traj_XYZTh.png used on input line 292.
+Package pdftex.def Info: figures/Traj_XYZTh.png used on input line 310.
 (pdftex.def)             Requested size: 307.28987pt x 204.82368pt.
- [11
+ [13
 
  <./figures/Traj_XYZTh.png>]
+<figures/Pdes_vs_Fluence.pdf, id=496, 473.77pt x 354.32375pt>
+File: figures/Pdes_vs_Fluence.pdf Graphic file (type pdf)
+
+<use figures/Pdes_vs_Fluence.pdf>
+Package pdftex.def Info: figures/Pdes_vs_Fluence.pdf used on input line 316.
+(pdftex.def)             Requested size: 215.10196pt x 160.87154pt.
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <14.4> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 316.
+ [14
+
+ <./figures/Pdes_vs_Fluence.pdf>]
 \tf@nav=\write6
 \openout6 = `Robert_Scholz_Seminar_30Nov2016.nav'.
 
@@ -1047,23 +1091,23 @@ Package pdftex.def Info: figures/Traj_XYZTh.png used on input line 292.
 \tf@snm=\write8
 \openout8 = `Robert_Scholz_Seminar_30Nov2016.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 880.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 880.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 902.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 902.
 
 (./Robert_Scholz_Seminar_30Nov2016.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 880.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 880.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 902.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 902.
 Package rerunfilecheck Info: File `Robert_Scholz_Seminar_30Nov2016.out' has not
  changed.
-(rerunfilecheck)             Checksum: 036DC48ED02E831103727357DF049EB9;159.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 880.
+(rerunfilecheck)             Checksum: BCE38278E2C9688743A6E70D8B865148;201.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 902.
  ) 
 Here is how much of TeX's memory you used:
- 17636 strings out of 493091
- 330767 string characters out of 6142991
+ 17686 strings out of 493091
+ 331545 string characters out of 6142991
  418534 words of memory out of 5000000
- 20638 multiletter control sequences out of 15000+600000
- 72536 words of font info for 82 fonts, out of 8000000 for 9000
+ 20673 multiletter control sequences out of 15000+600000
+ 79828 words of font info for 92 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  48i,20n,62p,670b,1050s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/base/8r.enc}</usr/share/texmf/fonts/type1/p
@@ -1074,11 +1118,11 @@ public/amsfonts/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/
 cmsy7.pfb></usr/share/texmf/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/tex
 mf/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/share/texmf/fonts/type1/urw/times
 /utmr8a.pfb>
-Output written on Robert_Scholz_Seminar_30Nov2016.pdf (11 pages, 1100559 bytes)
+Output written on Robert_Scholz_Seminar_30Nov2016.pdf (14 pages, 4874636 bytes)
 .
 PDF statistics:
- 450 PDF objects out of 1000 (max. 8388607)
- 386 compressed objects within 4 object streams
- 26 named destinations out of 1000 (max. 500000)
- 184 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 572 PDF objects out of 1000 (max. 8388607)
+ 496 compressed objects within 5 object streams
+ 33 named destinations out of 1000 (max. 500000)
+ 212 words of extra memory for PDF output out of 10000 (max. 10000000)
 
