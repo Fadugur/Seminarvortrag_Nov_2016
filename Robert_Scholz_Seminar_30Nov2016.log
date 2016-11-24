@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.3.17)  24 NOV 2016 04:12
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.3.17)  24 NOV 2016 22:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1038,11 +1038,11 @@ Package rerunfilecheck Info: File `Robert_Scholz_Seminar_30Nov2016.out' has not
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 846.
  ) 
 Here is how much of TeX's memory you used:
- 17544 strings out of 494976
- 330749 string characters out of 6179137
- 407150 words of memory out of 5000000
- 20304 multiletter control sequences out of 15000+600000
- 65309 words of font info for 77 fonts, out of 8000000 for 9000
+ 17539 strings out of 494976
+ 330700 string characters out of 6179137
+ 407151 words of memory out of 5000000
+ 20302 multiletter control sequences out of 15000+600000
+ 54973 words of font info for 73 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  48i,20n,62p,670b,1050s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
@@ -1053,7 +1053,7 @@ type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
 public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/hel
 vetic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8
 a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on Robert_Scholz_Seminar_30Nov2016.pdf (8 pages, 991747 bytes).
+Output written on Robert_Scholz_Seminar_30Nov2016.pdf (8 pages, 992810 bytes).
 PDF statistics:
  346 PDF objects out of 1000 (max. 8388607)
  291 compressed objects within 3 object streams
