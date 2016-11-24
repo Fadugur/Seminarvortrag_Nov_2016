@@ -190,17 +190,50 @@
 %   \end{block}
 \end{frame}
 
-\begin{frame}{Details of the experiment}
-  \begin{figure}
-    \includegraphics[width=.5\textwidth]{figures/scienceXray.png}
-  \end{figure}
-  \begin{figure}
-    \includegraphics[width=.5\textwidth]{figures/XrayIntOverTime.png}
-  \end{figure}
+\begin{frame}{Details of the time resolved x-ray experiment}
+  \begin{columns}[t]
+    \column{0.57\textwidth}
+      \begin{block}{What was done?}
+        \begin{itemize}
+         \item pump: \textit{vis}-fs-laser 
+         \item probe: x-ray free electron laser (K edge of O-atom) 
+        \end{itemize}
 
+      \end{block}
+%       \begin{block}{How does it work?}
+%        
+%       \end{block}	  
+      \begin{block}{What is observed?}
+        \begin{itemize}
+	  \item  
+	\end{itemize}	  
+      \end{block}      
+    \column{0.5\textwidth}
+  \begin{figure}
+    \includegraphics[width=1\textwidth]{figures/scienceXray.png}
+  \end{figure}
+  \begin{figure}
+    \includegraphics[width=1\textwidth]{figures/XrayIntOverTime.png}
+  \end{figure}
+  \end{columns}
 \end{frame}
 
 \section{models and methods}
+
+\begin{frame}{What happens after fs-laser excitation of the metal?}
+  \begin{block}{Coupling between three different kinds of degrees of freedom:} 
+    \begin{itemize}                                                                   
+      \item electron gas ($T_\mathrm{el}$)
+      \item lattice vibrations ($T_\mathrm{ph}$)
+      \item adsorbate movement ($T_\mathrm{ads}$)
+    \end{itemize}
+
+  \begin{figure}
+	\includegraphics[width=.7\textwidth]{figures/modifiedSurfScheme.png}
+  \end{figure}
+  \end{block}
+\end{frame}
+
 
 \begin{frame}{Two-Temperature Model}
   \begin{figure}
