@@ -200,6 +200,8 @@
 
 \end{frame}
 
+\section{models and methods}
+
 \begin{frame}{Two-Temperature Model}
   \begin{figure}
 	\includegraphics[width=\textwidth]{figures/2TM_equs.png}
@@ -214,6 +216,8 @@
 	\includegraphics[width=\textwidth]{figures/Traj_XYZTh.png}
   \end{figure}
 \end{frame}
+
+
 
 
 
