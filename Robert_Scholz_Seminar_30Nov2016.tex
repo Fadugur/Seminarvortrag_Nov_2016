@@ -146,7 +146,7 @@
 %   \column{.7\textwidth}
     \begin{block}{Why investigate fs-laser-driven surface dynamics?}
       \begin{itemize}
-      \item gain fundamental understanding of adsorbate bonding \newline $\Rightarrow$ additional tool besides scattering experiments 
+      \item gain fundamental understanding of adsorbate bonding \newline $\Rightarrow$ additional tool besides scattering experiments and STM
       \item possible direct application in catalysis: ``femtochemistry'' \newline $\Rightarrow$ new reaction pathways opened up by fs-lasers  
       \end{itemize}
     \end{block}
@@ -190,7 +190,7 @@
 %   \end{block}
 \end{frame}
 
-\begin{frame}{Details of the time resolved x-ray experiment}
+\begin{frame}{Details of the time-resolved x-ray experiment}
   \begin{columns}[t]
     \column{0.57\textwidth}
       \begin{block}{What was done?}
@@ -205,13 +205,13 @@
 %       \end{block}	  
       \begin{block}{What is observed?}
         \begin{itemize}
-	  \item orbital density of states 
+	  \item orbital density of states at O 
 	  \item energies shift towards gas-phase values of CO
 	  \item intensities change 
 	  \begin{itemize}
-	   \item 2$\tilde{\pi}^*$ increase by $\sim30$\% 
-	   \item $\tilde{d}_\pi$ decrease by $\sim30$\%
-	   \item Participator peak appears
+	   \item 2$\tilde{\pi}^*$ $\Rightarrow$ increase by $\sim30$\% 
+	   \item \~{d}$_\pi$ $\,\Rightarrow$ decrease by $\sim30$\%
+	   \item participator peak appears
 	  \end{itemize}
 
  
@@ -238,11 +238,19 @@
     \end{itemize}
 
   \begin{figure}
-	\includegraphics[width=.7\textwidth]{figures/modifiedSurfScheme.png}
+	\includegraphics[width=.7\textwidth]{figures/modifiedSurfScheme.png} 
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % 	
+	%modify number (2) to: Non-adiabatic coupling / ``electronic friction'' 
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % 	
   \end{figure}
   \end{block}
 \end{frame}
 
+\begin{frame}{Ab-initio-based, full-dimensional (6D) potential energy surface (PES)}
+  \begin{figure}
+	\includegraphics[width=.4\textwidth]{figures/6dimScheme.png}
+  \end{figure}
+\end{frame}
 
 \begin{frame}{Two-Temperature Model}
   \begin{figure}
@@ -253,9 +261,57 @@
   \end{figure}  
 \end{frame}
 
+\begin{frame}{Non-adiabatic coupling}
+  \begin{figure}
+	\includegraphics[width=.7\textwidth]{figures/scheme_nonadiab.png}
+  \end{figure}
+\end{frame}
+
+\begin{frame}{Langevin Dynamics}
+  \begin{figure}
+	\includegraphics[width=\textwidth]{figures/Langevin_eq.png}
+  \end{figure}
+  \begin{itemize}
+    \item $R_{\mathrm{el},k}(t)$ = Gaussian white noise% 
+%     \item 
+     , dependent on: 
+    \begin{itemize}
+      \item $\eta_{\mathrm{el},k}(\underline{r}_k)$ 
+      \item and $T_\mathrm{el}$
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Local density friction approx. plus independent atoms} 
+  
+\end{frame}
+
+\begin{frame}{Generalized Langevin Oscillator}
+  \begin{columns}[c]
+    \column{0.45\textwidth}
+	  \begin{figure}
+		\includegraphics[width=1.1\textwidth]{figures/GLO_eqs.png}
+	  \end{figure}
+	\column{.5\textwidth}
+	  \begin{figure}
+		\includegraphics[width=1.1\textwidth]{figures/GLO.png}
+	  \end{figure}
+  \end{columns}
+
+
+\end{frame}
+
+\section{results}
+
 \begin{frame}{Laser-Driven Diffusion}
   \begin{figure}
 	\includegraphics[width=\textwidth]{figures/Traj_XYZTh.png}
+  \end{figure}
+\end{frame}
+
+\begin{frame}{Fluence-dependence of desorption yield $P_\mathrm{des}$}
+  \begin{figure}
+	\includegraphics[width=.7\textwidth]{figures/Pdes_vs_Fluence.pdf}
   \end{figure}
 \end{frame}
 
