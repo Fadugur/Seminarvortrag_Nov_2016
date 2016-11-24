@@ -157,7 +157,7 @@
 	\includegraphics[width=.65\textwidth]{figures/CO_CO2.png}
       \end{figure}\vspace{-.5cm}                  
     \begin{center}  		
-	\begin{footnotesize}CO/O-coadsorbate @ Ru(0001)\end{footnotesize} \\ \begin{scriptsize}M. Bonn \textit{et al.}, \textsc{Science} (1999) \end{scriptsize}
+	\begin{footnotesize}CO/O-coadsorbate @ Ru(0001)\end{footnotesize} \\ \begin{scriptsize}M. Bonn \textit{et al.}, \textsc{Science} 1999 \end{scriptsize}
     \end{center}
       
 %     \end{block}
@@ -168,23 +168,36 @@
 
 
 \begin{frame}{Specific motivation for the CO/Ru-System}
-  \begin{block}{Recent Experiments partly contradict theory}
+  \begin{block}{CO/Ru system important for catalysis}
+	e. g. Fischer-Tropsch synthesis
+  \end{block}
+ 
+  \begin{block}{Experimentally well studied system}
     \begin{itemize}
-     \item Ultrafast time-resolved X-Ray-spectroscopy hints to physisorbed precursor state
-     \item Recent full 6D PES does not feature physisorption well
+	  \item especially regarding fs-laser irradiation e.g. Bonn, \textsc{Science} 1999 and Funk \textsc{J. Chem. Phys} 2000 (Ertl group - chemistry Nobel prize 2007).
+	  \item recently, time resolved x-ray spectra (XAS and XES)
+	  \newline $\Rightarrow$ ``movie'' of changes in orbital DOS
+%      \item Ultrafast time-resolved X-Ray-spectroscopy hints to physisorbed precursor state
+%      \item Recent full 6D PES does not feature physisorption well
     \end{itemize}
   \end{block}
   
-  \begin{block}{Open questions for theory}
-    \begin{itemize}
-     \item Do dynamics reproduce other observables correctly? (e. g. desorption yield) 
-     \item Can the X-Ray-spectra also be explained without physisorption?
-    \end{itemize}
-  \end{block}
+%   \begin{block}{Open questions for theory}
+%     \begin{itemize}
+%      \item Do dynamics reproduce other observables correctly? (e. g. desorption yield) 
+%      \item Can the X-Ray-spectra also be explained without physisorption?
+%     \end{itemize}
+%   \end{block}
 \end{frame}
 
 \begin{frame}{Details of the experiment}
-  
+  \begin{figure}
+    \includegraphics[width=.5\textwidth]{figures/scienceXray.png}
+  \end{figure}
+  \begin{figure}
+    \includegraphics[width=.5\textwidth]{figures/XrayIntOverTime.png}
+  \end{figure}
+
 \end{frame}
 
 \begin{frame}{Two-Temperature Model}
