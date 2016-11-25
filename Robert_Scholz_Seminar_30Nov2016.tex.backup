@@ -317,6 +317,7 @@
 \end{frame}
 
 \begin{frame}{Anisotropic diffusion + dynamical trapping}
+<<<<<<< Updated upstream
 
 %     \begin{figure}
       \hspace*{-.5cm}\includegraphics[width=1.1\textwidth]{figures/XYoverTime.png}
@@ -334,6 +335,18 @@
       \includegraphics[width=.9\textwidth]{figures/PES_XYview.pdf}
     \end{figure}
   \end{columns}  
+=======
+%   \begin{columns}[t]
+%   \column{.7\textwidth}
+    \begin{figure}
+      \includegraphics[width=1.\textwidth]{figures/XYoverTime.png}
+    \end{figure}
+%   \column{.3\textwidth}
+    \begin{figure}
+      \includegraphics[width=.5\textwidth]{figures/PES_XYview.pdf}
+    \end{figure}
+%   \end{columns}  
+>>>>>>> Stashed changes
 \end{frame}
 
 
