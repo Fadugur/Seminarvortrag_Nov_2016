@@ -2,10 +2,10 @@
 \select@language {english}
 \beamer@sectionintoc {1}{Introduction}{3}{0}{1}
 \beamer@subsectionintoc {1}{1}{Motivation - in general and system specific}{4}{0}{1}
-\beamer@subsectionintoc {1}{2}{First impressions of fs-laser-driven dynamics}{6}{0}{1}
-\beamer@sectionintoc {2}{Models and methods}{9}{0}{2}
-\beamer@subsectionintoc {2}{1}{Foundations: 6D potential and two-temperature model}{10}{0}{2}
-\beamer@subsectionintoc {2}{2}{Electronic friction: non-adiabatic coupling approximated}{12}{0}{2}
-\beamer@subsectionintoc {2}{3}{The generalized Langevin oscillator (GLO)}{15}{0}{2}
-\beamer@subsectionintoc {2}{4}{``Half-time'': short summary {\relax \fontsize {9}{11}\selectfont \abovedisplayskip 8\p@ plus2\p@ minus4\p@ \abovedisplayshortskip \z@ plus\p@ \belowdisplayshortskip 4\p@ plus2\p@ minus2\p@ \def \leftmargin \leftmargini \topsep 3\p@ plus2\p@ minus2.5\p@ \parsep 0\p@ \itemsep 3\p@ plus2\p@ minus3\p@ {\leftmargin \leftmargini \topsep 4\p@ plus2\p@ minus2\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip (and time for any first questions)}}{16}{0}{2}
-\beamer@sectionintoc {3}{Results}{16}{0}{3}
+\beamer@subsectionintoc {1}{2}{First impressions of fs-laser-driven dynamics}{7}{0}{1}
+\beamer@sectionintoc {2}{Models and methods}{10}{0}{2}
+\beamer@subsectionintoc {2}{1}{Foundations: 6D potential and two-temperature model}{11}{0}{2}
+\beamer@subsectionintoc {2}{2}{Electronic friction: non-adiabatic coupling approximated}{13}{0}{2}
+\beamer@subsectionintoc {2}{3}{The generalized Langevin oscillator (GLO)}{16}{0}{2}
+\beamer@subsectionintoc {2}{4}{``Half-time'': short summary {\relax \fontsize {9}{11}\selectfont \abovedisplayskip 8\p@ plus2\p@ minus4\p@ \abovedisplayshortskip \z@ plus\p@ \belowdisplayshortskip 4\p@ plus2\p@ minus2\p@ \def \leftmargin \leftmargini \topsep 3\p@ plus2\p@ minus2.5\p@ \parsep 0\p@ \itemsep 3\p@ plus2\p@ minus3\p@ {\leftmargin \leftmargini \topsep 4\p@ plus2\p@ minus2\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip (and time for any first questions)}}{17}{0}{2}
+\beamer@sectionintoc {3}{Results}{17}{0}{3}

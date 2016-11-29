@@ -216,7 +216,7 @@
   \end{block}
 \end{frame}
 
-\begin{frame}{Details of the time-resolved x-ray experiment}{Dell'Angela \textit{et al.}, \textit{Science} 2013 {\scriptsize (experimental part by Nilsson group, SLAC, Stanford)}}
+\begin{frame}{Details of the time-resolved x-ray experiment}{Dell'Angela \textit{et al.}, \textit{Science} 2013 {\scriptsize (experimental part by Nilsson group, SLAC/LCLS, Stanford)}}
   \vspace*{-.7cm}
   \begin{columns}[t]
     \column{0.51\textwidth}
@@ -289,7 +289,7 @@
 
 
 \subsection{Electronic friction: non-adiabatic coupling approximated}
-\begin{frame}{Non-adiabatic coupling}
+\begin{frame}{Different approaches to describe Non-adiabatic coupling}
   \begin{figure}
 	\includegraphics[width=.7\textwidth]{figures/scheme_nonadiab.png}
   \end{figure}
