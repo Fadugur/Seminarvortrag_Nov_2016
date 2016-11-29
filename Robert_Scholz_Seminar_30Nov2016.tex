@@ -37,7 +37,7 @@
 }
 \setbeamercolor{alerted text}{fg=green!40!black}
 
-\usepackage[german]{babel}
+\usepackage[english]{babel}
 % oder was auch immer
 
 \usepackage[latin1]{inputenc}
@@ -96,12 +96,12 @@
 
 % Folgendes sollte gelöscht werden, wenn man nicht am Anfang jedes
 % Unterabschnitts die Gliederung nochmal sehen möchte.
-% \AtBeginSubsection[]
-% {
-%   \begin{frame}[plain]{Gliederung}
-%     \tableofcontents[currentsection,currentsubsection]
-%   \end{frame}
-% }
+\AtBeginSection[]
+{
+  \begin{frame}[plain]{Outline}
+    \tableofcontents[currentsection]
+  \end{frame}
+}
 
 
 % Falls Aufzählungen immer schrittweise gezeigt werden sollen, kann
@@ -120,7 +120,7 @@
 
 \end{frame}
 
-\begin{frame}[plain]{Gliederung}
+\begin{frame}[plain]{Outline}
   \tableofcontents
   % Die Option [pausesections] könnte nützlich sein.
 \end{frame}
@@ -139,7 +139,7 @@
 %   15 bis 30 Rahmen geben.
 
 \section{Introduction}
-  \subsection{Motivation}
+  \subsection{Motivation - in general and system specific}
   
 \begin{frame}{General motivation}
 %   \begin{columns}[t]
@@ -190,22 +190,29 @@
 %   \end{block}
 \end{frame}
 
-\subsection[101 of fs-lasers]{First impressions of fs-laser excitation}
+\subsection[101 of fs-lasers]{First impressions of fs-laser-driven dynamics}
+
+
 
 \begin{frame}{What happens after fs-laser excitation of the metal?}
-  \begin{block}{Coupling between three different kinds of degrees of freedom:} 
-    \begin{itemize}                                                                   
-      \item electron gas ($T_\mathrm{el}$)
-      \item lattice vibrations ($T_\mathrm{ph}$)
-      \item adsorbate movement ($T_\mathrm{ads}$)
-    \end{itemize}
-
   \begin{figure}
 	\includegraphics[width=.7\textwidth]{figures/modifiedSurfScheme.png} 
 % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % 	
 	%modify number (2) to: Non-adiabatic coupling / ``electronic friction'' 
 % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % 	
   \end{figure}
+
+  \begin{block}{Coupling between three different kinds of degrees of freedom:} 
+    \begin{itemize}                                                                   
+      \item electron gas ($T_\mathrm{el}$) 
+	\begin{itemize}
+	 \item initially absorbs laser energy
+	 \item low heat capacity $\Rightarrow$ high temperatures ($\approx$5-10$\,$kK)
+	\end{itemize}
+      \item lattice vibrations ($T_\mathrm{ph}$)
+      \item adsorbate movement ($T_\mathrm{ads}$)
+    \end{itemize}
+
   \end{block}
 \end{frame}
 
@@ -262,15 +269,16 @@
 
 \section{Models and methods}
 
-
-
+% \subsection{The foundation: our 6D potential energy surface (PES)}
+\subsection{Foundations: 6D potential and two-temperature model}
 \begin{frame}{Ab-initio-based, full-dimensional (6D) potential energy surface (PES)}
   \begin{figure}
 	\includegraphics[width=.4\textwidth]{figures/6dimScheme.png}
   \end{figure}
 \end{frame}
 
-\begin{frame}{Two-Temperature Model}
+% \subsection{The two-temperature model (TTM)}
+\begin{frame}{Two-Temperature Model (TTM)}
   \begin{figure}
 	\includegraphics[width=\textwidth]{figures/2TM_equs.png}
   \end{figure}
@@ -279,6 +287,8 @@
   \end{figure}  
 \end{frame}
 
+
+\subsection{Electronic friction: non-adiabatic coupling approximated}
 \begin{frame}{Non-adiabatic coupling}
   \begin{figure}
 	\includegraphics[width=.7\textwidth]{figures/scheme_nonadiab.png}
@@ -304,6 +314,7 @@
   
 \end{frame}
 
+\subsection{The generalized Langevin oscillator (GLO)}
 \begin{frame}{Generalized Langevin Oscillator}
   \begin{columns}[c]
     \column{0.25\textwidth}
@@ -323,6 +334,8 @@
 
 
 \end{frame}
+
+\subsection{``Half-time'': short summary {\footnotesize(and time for any first questions)}}
 
 \section{Results}
 
