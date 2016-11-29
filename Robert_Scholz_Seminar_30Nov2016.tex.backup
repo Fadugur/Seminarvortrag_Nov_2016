@@ -139,7 +139,7 @@
 %   15 bis 30 Rahmen geben.
 
 \section{Introduction}
-  \subsection{Motivation - in general and system specific}
+  \subsection[Motivation]{Motivation - in general and system specific}
   
 \begin{frame}{General motivation}
 %   \begin{columns}[t]
@@ -167,16 +167,26 @@
 % \begin{frame}{CO/Ru-System}
 
 
-\begin{frame}{Specific motivation for the CO/Ru-System}
-  \begin{block}{CO/Ru system important for catalysis}
-	e. g. Fischer-Tropsch synthesis
+\begin{frame}{Specific motivation for investigating CO/Ru(0001)}
+  \begin{block}{CO/Ru(0001) system important for catalysis, e.g.:}
+	\begin{itemize}
+	  \item Fischer-Tropsch synthesis
+	  \item exhaust gas converters \begin{footnotesize} (systems with similar metals)	                                               \end{footnotesize}
+	\end{itemize}
+
   \end{block}
  
   \begin{block}{Experimentally well studied system}
     \begin{itemize}
-	  \item especially regarding fs-laser irradiation  e.g.:\newline Bonn \textit{et al.}, \textit{Science} 1999; Funk \textit{et al.}, \textit{JChemPhys} 2000 (both Ertl group - chemistry Nobel prize 2007).
+	  \item especially regarding fs-laser irradiation:\begin{itemize}\item \begin{scriptsize}e.g. Bonn \textit{et al.}, \textit{Science} 1999; Funk \textit{et al.}, \textit{JChemPhys} 2000\end{scriptsize}	                                                                                                                                                      \item\begin{footnotesize}(both Ertl group $\Rightarrow$ chemistry Nobel prize 2007).	                                                                                                                                                                                                                                                                                                                                        \end{footnotesize}\end{itemize}
+	  \item desorption kinetics: large prefactors $\Rightarrow$ still not understood 
 	  \item recently, time resolved x-ray spectra (XAS and XES)
-	  \newline $\Rightarrow$ ``movie'' of changes in orbital DOS
+	  \newline $\Rightarrow$ ``movie'' of changes in orbital density of states
+	  \begin{itemize}
+	    \item {\scriptsize Dell'Angela \textit{et al.}, \textit{Science} 2013}
+	  \end{itemize}
+
+	  
 %      \item Ultrafast time-resolved X-Ray-spectroscopy hints to physisorbed precursor state
 %      \item Recent full 6D PES does not feature physisorption well
     \end{itemize}
@@ -190,16 +200,31 @@
 %   \end{block}
 \end{frame}
 
+\begin{frame}{Further specific motivation for investigating CO/Ru}
+  \begin{columns}
+	\column{.5\textwidth}
+	  \begin{figure}
+		\includegraphics[width=.8\textwidth]{figures/6dimScheme.png}
+	  \end{figure}
+	\column{.5\textwidth}
+	  \begin{figure}
+		\includegraphics[width=.8\textwidth]{figures/PES_XYview.pdf}
+	  \end{figure}
+	
+  \end{columns}
+  \begin{block}
+    
+  \end{block}
+\end{frame}
+
+
 \subsection[101 of fs-lasers]{First impressions of fs-laser-driven dynamics}
 
 
 
 \begin{frame}{What happens after fs-laser excitation of the metal?}
   \begin{figure}
-	\includegraphics[width=.7\textwidth]{figures/modifiedSurfScheme.png} 
-% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % 	
-	%modify number (2) to: Non-adiabatic coupling / ``electronic friction'' 
-% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % 	
+	\includegraphics[width=.9\textwidth]{figures/modifiedSurfScheme.png} 
   \end{figure}
 
   \begin{block}{Coupling between three different kinds of degrees of freedom:} 
@@ -289,7 +314,7 @@
 
 
 \subsection{Electronic friction: non-adiabatic coupling approximated}
-\begin{frame}{Different approaches to describe Non-adiabatic coupling}
+\begin{frame}{Different approaches to describe non-adiabatic coupling}
   \begin{figure}
 	\includegraphics[width=.7\textwidth]{figures/scheme_nonadiab.png}
   \end{figure}
