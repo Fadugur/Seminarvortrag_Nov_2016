@@ -96,10 +96,10 @@
 
 % Folgendes sollte gelöscht werden, wenn man nicht am Anfang jedes
 % Unterabschnitts die Gliederung nochmal sehen möchte.
-\AtBeginSection[]
+\AtBeginSubsection[]
 {
   \begin{frame}[plain]{Outline}
-    \tableofcontents[currentsection]
+    \tableofcontents[currentsection,currentsubsection]
   \end{frame}
 }
 
@@ -240,6 +240,7 @@
     \begin{itemize}                                                                   
       \item electron gas ($T_\mathrm{el}$) 
 	\begin{itemize}
+	  \footnotesize
 	 \item initially absorbs laser energy
 	 \item low heat capacity $\Rightarrow$ high temperatures ($\approx$5-10$\,$kK)
 	\end{itemize}
