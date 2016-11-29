@@ -7,5 +7,9 @@
 \beamer@subsectionintoc {2}{1}{Foundations: 6D potential and two-temperature model}{11}{0}{2}
 \beamer@subsectionintoc {2}{2}{Electronic friction: non-adiabatic coupling approximated}{14}{0}{2}
 \beamer@subsectionintoc {2}{3}{The generalized Langevin oscillator (GLO)}{18}{0}{2}
-\beamer@subsectionintoc {2}{4}{``Half-time'': short summary {\relax \fontsize {9}{11}\selectfont \abovedisplayskip 8\p@ plus2\p@ minus4\p@ \abovedisplayshortskip \z@ plus\p@ \belowdisplayshortskip 4\p@ plus2\p@ minus2\p@ \def \leftmargin \leftmargini \topsep 3\p@ plus2\p@ minus2.5\p@ \parsep 0\p@ \itemsep 3\p@ plus2\p@ minus3\p@ {\leftmargin \leftmargini \topsep 4\p@ plus2\p@ minus2\p@ \parsep 2\p@ plus\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip (and time for any first questions)}}{20}{0}{2}
-\beamer@sectionintoc {3}{Results}{21}{0}{3}
+\beamer@subsectionintoc {2}{4}{``Half-time'': short summary {\relax \fontsize {8}{9.5}\selectfont (and maybe time for a few questions)}}{20}{0}{2}
+\beamer@sectionintoc {3}{Results and discussion}{21}{0}{3}
+\beamer@subsectionintoc {3}{1}{Laser-driven diffusion}{21}{0}{3}
+\beamer@subsectionintoc {3}{2}{Laser-driven desorption}{23}{0}{3}
+\beamer@subsectionintoc {3}{3}{Physisorbed precursor states?}{27}{0}{3}
+\beamer@sectionintoc {4}{Summary and Outlook}{29}{0}{4}
