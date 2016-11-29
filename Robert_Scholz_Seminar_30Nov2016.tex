@@ -235,20 +235,32 @@
   \begin{figure}
 	\includegraphics[width=.9\textwidth]{figures/modifiedSurfScheme.png} 
   \end{figure}
-
-  \begin{block}{Coupling between three different kinds of degrees of freedom:} 
+  \vspace*{-.3cm}
+  \begin{columns}
+  \column{0.75\textwidth}
+  \begin{block}{Coupling between 3 kinds of degrees of freedom:} 
     \begin{itemize}                                                                   
       \item electron gas ($T_\mathrm{el}$) 
 	\begin{itemize}
 	  \footnotesize
 	 \item initially absorbs laser energy
-	 \item low heat capacity $\Rightarrow$ high temperatures ($\approx$5-10$\,$kK)
+	 \item low heat capacity $\Rightarrow$ high $T_\mathrm{el}$ ($\approx$5-10$\,$kK)
 	\end{itemize}
       \item lattice vibrations ($T_\mathrm{ph}$)
+			\begin{itemize}
+	  \footnotesize
+	 \item thermalization with electrons: ps time scale
+	 \newline $\Rightarrow$ fs-laser causes two distinct temperatures!
+	\end{itemize}
       \item adsorbate movement ($T_\mathrm{ads}$)
     \end{itemize}
 
   \end{block}
+  \column{0.2\textwidth}
+  \begin{figure}
+    \includegraphics[width=1.3\textwidth]{figures/TTM_1pulse-eps-converted-to.pdf}
+  \end{figure}
+  \end{columns}
 \end{frame}
 
 \begin{frame}{Details of the time-resolved x-ray experiment}{Dell'Angela \textit{et al.}, \textit{Science} 2013 {\scriptsize (experimental part by Nilsson group, SLAC/LCLS, Stanford)}}
@@ -282,14 +294,14 @@
 	  \large \item[\LARGE$\Rightarrow$] physisorbed precursor(?)
 	\end{itemize}	  
       \end{block}      
-    \column{0.55\textwidth}
-     \vspace*{-.3cm}
+    \column{0.50\textwidth}
+     \vspace*{-.8cm}
   \begin{figure}
-    \includegraphics[width=1\textwidth]{figures/scienceXray.png}
+    \includegraphics[width=1.1\textwidth]{figures/scienceXray.png}
   \end{figure}
          \vspace*{-.15cm}
 %   \begin{figure}
-    \includegraphics[width=1\textwidth]{figures/XrayIntOverTime.png}
+    \includegraphics[width=1.1\textwidth]{figures/XrayIntOverTime.png}
 %   \end{6figure}
   \end{columns}
 \end{frame}
