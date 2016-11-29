@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/TeX Live for SUSE Linux) (preloaded format=pdflatex 2016.11.18)  29 NOV 2016 18:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/TeX Live for SUSE Linux) (preloaded format=pdflatex 2016.11.18)  29 NOV 2016 18:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -987,9 +987,13 @@ File: figures/modifiedSurfScheme.png Graphic file (type png)
 <use figures/modifiedSurfScheme.png>
 Package pdftex.def Info: figures/modifiedSurfScheme.png used on input line 264.
 
-(pdftex.def)             Requested size: 276.559pt x 58.20169pt.
-LaTeX Font Info:    Try loading font information for T1+ptm on input line 264.
+(pdftex.def)             Requested size: 338.02072pt x 71.13661pt.
 
+Overfull \hbox (16.50449pt too wide) in paragraph at lines 264--264
+[]| []  
+ []
+
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 264.
 (/usr/share/texmf/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
@@ -1001,8 +1005,8 @@ Package pdftex.def Info: figures/TTM_1pulse-eps-converted-to.pdf used on input
 line 264.
 (pdftex.def)             Requested size: 79.89432pt x 80.51624pt.
 
-Overfull \hbox (18.43729pt too wide) in paragraph at lines 264--264
- [] 
+Overfull \hbox (12.74683pt too wide) in paragraph at lines 264--264
+ | [] 
  []
 
 [8
@@ -1240,7 +1244,7 @@ Here is how much of TeX's memory you used:
  20759 multiletter control sequences out of 15000+600000
  96861 words of font info for 121 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 48i,20n,65p,834b,972s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 48i,20n,65p,834b,970s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/base/8r.enc}</usr/share/texmf/fonts/type1/p
 ublic/amsfonts/cm/cmmi10.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/c
 mmi12.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/shar
@@ -1255,7 +1259,7 @@ ublic/amsfonts/cm/cmsy8.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cm
 sy9.pfb></usr/share/texmf/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texmf
 /fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texmf/fonts/type1/urw/helvetic
 /uhvro8a.pfb></usr/share/texmf/fonts/type1/urw/times/utmr8a.pfb>
-Output written on Robert_Scholz_Seminar_30Nov2016.pdf (31 pages, 8321807 bytes)
+Output written on Robert_Scholz_Seminar_30Nov2016.pdf (31 pages, 8321799 bytes)
 .
 PDF statistics:
  1844 PDF objects out of 2073 (max. 8388607)

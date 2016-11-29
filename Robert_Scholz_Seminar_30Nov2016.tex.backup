@@ -232,12 +232,12 @@
 
 
 \begin{frame}{What happens after fs-laser excitation of the metal?}
-  \begin{figure}
-	\includegraphics[width=.9\textwidth]{figures/modifiedSurfScheme.png} 
-  \end{figure}
-  \vspace*{-.3cm}
+%   \begin{figure}
+	\hspace*{-.5cm}\includegraphics[width=1.2\textwidth]{figures/modifiedSurfScheme.png} 
+%   \end{figure}
+
   \begin{columns}
-  \column{0.75\textwidth}
+  \column{0.8\textwidth}
   \begin{block}{Coupling between 3 kinds of degrees of freedom:} 
     \begin{itemize}                                                                   
       \item electron gas ($T_\mathrm{el}$) 
@@ -258,7 +258,7 @@
   \end{block}
   \column{0.2\textwidth}
   \begin{figure}
-    \includegraphics[width=1.3\textwidth]{figures/TTM_1pulse-eps-converted-to.pdf}
+    \hspace*{-.2cm}\includegraphics[width=1.3\textwidth]{figures/TTM_1pulse-eps-converted-to.pdf}
   \end{figure}
   \end{columns}
 \end{frame}
@@ -307,9 +307,25 @@
 \end{frame}
 
 \begin{frame}{Details of the accompanying theory}{still Dell'Angela \textit{et al.}, \textit{Science} 2013 {\scriptsize (theory part by N\o{}rskov group, SUNCAT, Stanford)}}
-  \begin{figure}
-	\includegraphics[width=.4\textwidth]{figures/sciencePMF.png}
-  \end{figure}
+  	\vspace{-1cm}
+  \begin{columns}[t]
+  \column{0.55\textwidth}
+	\vspace{-.53cm}
+	\begin{figure}
+	  \includegraphics[width=1.06\textwidth]{figures/sciencePMF.png}
+	\end{figure}
+	\vspace{.21cm}
+	{\scriptsize \begin{center}
+Dell'Angela \textit{et al.}, \textit{Science} 2013	                                                               \end{center}}
+  \column{0.45\textwidth}
+	\begin{figure}
+	  \includegraphics[width=1.1\textwidth]{figures/GernotPMF.pdf}
+	\end{figure}
+	{\scriptsize \begin{center}
+Scholz \textit{et al.}, \textit{PhysRevB} 2016	                                                           \end{center}}
+  \end{columns}
+
+
 \end{frame}
 
 
@@ -376,11 +392,9 @@
 		\includegraphics[width=1.1\textwidth]{figures/GLO.png}
 % 	  \end{figure}
   \end{columns}
-
-
 \end{frame}
 
-\subsection{``Half-time'': short summary {\footnotesize(and time for any first questions)}}
+\subsection[Half-time]{``Half-time'': short summary {\scriptsize(and maybe time for a few  questions)}}
 
 \section{Results and discussion}
 
@@ -392,7 +406,7 @@
   \end{figure}
 \end{frame}
 
-\subsection{Laser-driven Desorption}
+\subsection{Laser-driven desorption}
 
 \begin{frame}{Heating of DOFs $Z$ and $\theta$}
   \begin{figure}
@@ -412,7 +426,7 @@
   \end{figure}
 \end{frame}
 
-\subsection{Physisorbed precursor states(?)}
+\subsection{Physisorbed precursor states?}
 
 \begin{frame}{Anisotropic diffusion patterns + dynamical trapping}
 
@@ -442,11 +456,20 @@
 
 
 \section{Summary and Outlook}
-\subsection{~}
+
+  \begin{frame}[plain]{Outline}
+    \tableofcontents[currentsection]
+  \end{frame}
 
 \begin{frame}{Summary}
 
 \end{frame}
+
+\begin{frame}{Outlook}
+
+\end{frame}
+
+
 
 % % \section{Einleitung}
 % %   \subsection{Diamantoide - Die etwas anderen Nanodiamanten}
