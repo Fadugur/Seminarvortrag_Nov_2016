@@ -8,8 +8,8 @@
 \beamer@subsectionintoc {2}{2}{Electronic friction: non-adiabatic coupling approximated}{14}{0}{2}
 \beamer@subsectionintoc {2}{3}{The generalized Langevin oscillator (GLO)}{18}{0}{2}
 \beamer@subsectionintoc {2}{4}{``Half-time'': short summary {\relax \fontsize {8}{9.5}\selectfont (and maybe time for a few questions)}}{20}{0}{2}
-\beamer@sectionintoc {3}{Results and discussion}{21}{0}{3}
-\beamer@subsectionintoc {3}{1}{Laser-driven diffusion}{21}{0}{3}
-\beamer@subsectionintoc {3}{2}{Laser-driven desorption}{23}{0}{3}
-\beamer@subsectionintoc {3}{3}{Physisorbed precursor states?}{27}{0}{3}
-\beamer@sectionintoc {4}{Summary and Outlook}{32}{0}{4}
+\beamer@sectionintoc {3}{Results and discussion}{22}{0}{3}
+\beamer@subsectionintoc {3}{1}{Overview of computational settings}{22}{0}{3}
+\beamer@subsectionintoc {3}{2}{Laser-driven diffusion and desorption}{24}{0}{3}
+\beamer@subsectionintoc {3}{3}{Physisorbed precursor states?}{29}{0}{3}
+\beamer@sectionintoc {4}{Summary and Outlook}{34}{0}{4}
