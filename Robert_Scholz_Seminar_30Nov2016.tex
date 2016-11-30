@@ -375,13 +375,39 @@ Scholz \textit{et al.}, \textit{PhysRevB} 2016	                                 
 \end{frame}
 
 % \subsection{The two-temperature model (TTM)}
-\begin{frame}{Two-temperature model (TTM)}
+\begin{frame}{Two-temperature model (TTM)}{Two coupled heat diffusion equations}
+  
+  \begin{columns}
+   \column{0.3\textwidth}
+    \begin{figure}
+	\includegraphics[width=1\textwidth]{figures/Part1SurfScheme.png}
+  \end{figure}
+         \begin{figure}
+    \includegraphics[width=1\textwidth]{figures/TTM_1pulse-eps-converted-to.pdf}
+  \end{figure} 
+  \column{0.8\textwidth}
+  \vspace*{-1cm}
   \begin{figure}
 	\includegraphics[width=\textwidth]{figures/2TM_equs.png}
-  \end{figure}
-  \begin{figure}
-    \includegraphics[width=.35\textwidth]{figures/TTM_1pulse-eps-converted-to.pdf}
   \end{figure}  
+   \begin{block}{Original TTM {(\scriptsize Anisimov \textit{et al.}, \textit{SovPhys-JETP} 1974)} }
+    \begin{itemize}
+     \item $T_\mathrm{el}$ and $T_\mathrm{ph}$ as $f(z,t)$ {\footnotesize from laser/material properties}
+     \begin{itemize}
+     \footnotesize
+     \item $C_\mathrm{el}$ and $C_\mathrm{ph}$ $\Rightarrow$ heat capacities
+     \item $\kappa = \kappa_0 \frac{T_\mathrm{el}}{T_\mathrm{ph}}$ $\Rightarrow$ electron heat conductivity
+     \item $g$ $\Rightarrow$ electron-phonon coupling constant
+     \item $S(z,t)$ $\Rightarrow$ depends on pulse shape, $\lambda$, fluence $F$ 
+          \end{itemize}
+    \end{itemize}
+
+   \end{block}
+  \end{columns}
+
+
+
+
 \end{frame}
 
 
@@ -446,7 +472,10 @@ Scholz \textit{et al.}, \textit{PhysRevB} 2016	                                 
 	  \begin{figure}
 		\hspace*{-.7cm}\includegraphics[width=2.6\textwidth]{figures/GLO_eq1.png}
 	  \end{figure}
-	  \vspace{2.7cm}
+	  \begin{figure}
+		\hspace*{-.7cm}\includegraphics[width=1.3\textwidth]{figures/Part3SurfScheme.png}
+	  \end{figure}
+	  \vspace{-1cm}
 	  \begin{figure}
 		\hspace*{-.7cm}\includegraphics[width=2.4\textwidth]{figures/GLO_eq2.png}
 	  \end{figure}
