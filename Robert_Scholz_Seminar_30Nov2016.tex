@@ -335,10 +335,43 @@ Scholz \textit{et al.}, \textit{PhysRevB} 2016	                                 
 
 % \subsection{The foundation: our 6D potential energy surface (PES)}
 \subsection[6D PES and TTM]{Foundations: 6D potential and two-temperature model}
-\begin{frame}{Ab-initio-based, full-dimensional (6D) potential energy surface (PES)}
-  \begin{figure}
-	\includegraphics[width=.4\textwidth]{figures/6dimScheme.png}
-  \end{figure}
+\begin{frame}{More facts about the potential energy surface (PES)}
+  \begin{columns}
+   \column{0.9\textwidth}
+     
+  \begin{block}{How was it constructed?}
+    \begin{itemize}
+      \item GGA-level (RPBE) with VdW-correction (D2)
+
+      \item (2x2) cell with 1 CO $\Rightarrow$ 14 atoms, 0.25 ML coverage
+      \begin{itemize}
+	\item \footnotesize all 6 dimensions of adsorbate $\Rightarrow$ surface atoms frozen
+      \end{itemize} 
+      \item interpolation with cubic splines and\newline corrugation reducing procedure (CRP)
+      \begin{itemize}
+	\item \footnotesize atomic potentials temporarily substracted \newline $\Rightarrow$ smoother intermittent potential, interpolates better
+      \end{itemize}
+      \item slightly newer PES: C$_{3v}$- instead of C$_{6v}$-symmetry	
+      \begin{itemize}
+	\item \footnotesize differences between hcp and fcc sites not neglected
+      \end{itemize}
+     \end{itemize}
+
+  \end{block}
+
+   \column{0.15\textwidth}
+       \begin{figure}
+	\hspace*{-.2cm}\includegraphics[width=1.3\textwidth]{figures/PES_samplepoints.pdf}
+      \end{figure}
+      
+%       \begin{figure}
+% 	\includegraphics[width=1.2\textwidth]{figures/PES_XYview.pdf}
+%       \end{figure}
+
+  \end{columns}
+        \begin{figure}
+	\includegraphics[width=0.33\textwidth]{figures/PES_XYview.pdf}
+      \end{figure}
 \end{frame}
 
 % \subsection{The two-temperature model (TTM)}
@@ -353,30 +386,57 @@ Scholz \textit{et al.}, \textit{PhysRevB} 2016	                                 
 
 
 \subsection[MDEF]{Electronic friction: non-adiabatic coupling approximated}
-\begin{frame}{Different approaches to describe non-adiabatic coupling}
+\begin{frame}{Different approaches to non-adiabatic coupling}
   \begin{figure}
-	\includegraphics[width=.7\textwidth]{figures/scheme_nonadiab.png}
+	\includegraphics[width=.6\textwidth]{figures/scheme_nonadiab.png}
   \end{figure}
+  \begin{block}{Langevin dynamics + electronic friction}
+   \begin{itemize}
+    \item fastest method $\Rightarrow$ suited for multi-dimensional dynamics
+    \item good approximation for weak non-adiabatic coupling
+   \end{itemize}
+
+  \end{block}
+
 \end{frame}
 
 \begin{frame}{The Langevin equation}{A stochastic differential equation}
-  \begin{figure}
+  \begin{columns}
+  \column{0.3\textwidth}
+   \begin{figure}
+	\includegraphics[width=\textwidth]{figures/Part2SurfScheme.png}
+  \end{figure}
+  \column{0.8\textwidth}
+\begin{figure}
 	\includegraphics[width=\textwidth]{figures/Langevin_eq.png}
   \end{figure}
+    \end{columns}
+  \begin{block}{Langevin equation within IAA {\small(independent atom approx.)}}
   \begin{itemize}
-    \item $R_{\mathrm{el},k}(t)$ = Gaussian white noise% 
+   \item friction coefficient of Atom k: $\eta_{\mathrm{el},k}(\underline{r}_k)$ $\Rightarrow$ dissipation
+  
+      \begin{itemize}
+      \footnotesize
+      \item derived from local density friction approximation (LDFA)
+      \newline $\Rightarrow$ individual atom (again IAA) in free electron gas
+      \item $\eta_{\mathrm{el},k}(\underline{r}_k)$ dependent on electron density of bare surface
+      \end{itemize}
+
+    \item random force $\underline{R}_{\mathrm{el},k}(t)$ $\Rightarrow$ fluctuation% 
 %     \item 
      
-    \begin{itemize}
+    \begin{itemize}\footnotesize
+	  \item Gaussian white noise
 	  \item describes excitation by hot electron-hole pairs
-      \item dependent on: $\eta_{\mathrm{el},k}(\underline{r}_k)$ and $T_\mathrm{el}$
+      \item proportional to: $\eta_{\mathrm{el},k}(\underline{r}_k)$ and $T_\mathrm{el}(t)$
     \end{itemize}
   \end{itemize}
+  \end{block}
 \end{frame}
 
-\begin{frame}{Local density friction approx. plus independent atoms} 
-  
-\end{frame}
+% \begin{frame}{Local density friction approx. plus independent atoms} 
+%   
+% \end{frame}
 
 \subsection[GLO]{The generalized Langevin oscillator (GLO)}
 \begin{frame}[plain]{Generalized Langevin Oscillator}
@@ -426,21 +486,41 @@ Scholz \textit{et al.}, \textit{PhysRevB} 2016	                                 
 
 \begin{frame}{Heating of DOFs $Z$ and $\theta$}
   \begin{figure}
-	\includegraphics[width=.7\textwidth]{figures/ZundTheta.pdf}
+	\vspace*{-.4cm}\includegraphics[width=.9\textwidth]{figures/ZundTheta.pdf}
   \end{figure}
 \end{frame}
 
 \begin{frame}{Fluence-dependence of desorption yield $P_\mathrm{des}$}
-  \begin{figure}
-	\includegraphics[width=.7\textwidth]{figures/Pdes_vs_Fluence.pdf}
-  \end{figure}
+  \begin{columns}
+    \column{.75\textwidth}
+    \begin{figure}
+      \includegraphics[width=1\textwidth]{figures/Pdes_vs_Fluence.pdf}
+    \end{figure}
+    \column{.3\textwidth}
+      \begin{block}{Power-law}
+	\begin{itemize}
+	 \item $P_\mathrm{des} = A \cdot F^n$
+	 \item not exactly
+	\end{itemize}
+
+      \end{block}
+      
+      \begin{block}{Differences in exp.}
+	\begin{itemize}
+	 \item coverage:
+	 \item  [$\Rightarrow$] \begin{small}0.68 ML (max.)	                                      \end{small}
+	\end{itemize}
+
+      \end{block}
+
+  \end{columns}
 \end{frame}
 
-\begin{frame}{Two-pulse correlation of desorption}
-  \begin{figure}
-	\includegraphics[width=.7\textwidth]{figures/Pdes_vs_Fluence.pdf}
-  \end{figure}
-\end{frame}
+% \begin{frame}{Two-pulse correlation of desorption}
+%   \begin{figure}
+% 	\includegraphics[width=.7\textwidth]{figures/Pdes_vs_Fluence.pdf}
+%   \end{figure}
+% \end{frame}
 
 \subsection{Physisorbed precursor states?}
 
